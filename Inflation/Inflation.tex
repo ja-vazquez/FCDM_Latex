@@ -1,0 +1,1752 @@
+
+
+%\documentclass[secnumarabic,twocolumn,preprintnumbers,amsmath,amssymb,aps]{revtex4}
+\documentclass{rmaa}
+
+\usepackage{paralist}
+
+% These are used in one of the graphics examples
+\usepackage{psfrag,color}
+
+% Allow accented characters to be entered directly
+\usepackage[latin1]{inputenc}
+
+
+\usepackage{natbib}
+%\usepackage{bm}
+%\usepackage{latexsym}
+%\usepackage{eufrak}
+\usepackage{epsfig}
+%\usepackage{latexsym}
+\usepackage{amsmath}
+%\usepackage{epsfig}
+%\usepackage{ifpdf}
+%\usepackage{graphicx}
+%\usepackage{dcolumn}
+
+
+\hyphenation{pa-ra-me-ter}
+\hyphenation{In-fla-tio-na-ry}
+\hyphenation{a-cce-ssi-ble}
+\hyphenation{cos-mo-lo-gi-cal}
+\hyphenation{a-pproach}
+\hyphenation{do-mi-na-ted}
+\hyphenation{ex-pli-ci-tly}
+\hyphenation{Hu-bble}
+\hyphenation{re-pre-sen-ted}
+\hyphenation{lo-ga-rith-mic}
+\hyphenation{Ho-we-ver}
+\hyphenation{di-ffe-rent}
+
+
+\def\beq{\begin{equation}}
+\def\eeq{\end{equation}}
+\def\bea{\begin{eqnarray}}
+\def\eea{\end{eqnarray}}
+\def\cal{\mathcal}
+
+
+
+
+%\begin{document}
+  \title{Constraining Cosmological Inflation}
+
+
+\author{
+J. Alberto V\'azquez, Tonatiuh Matos}
+%Tonatiuh Matos \altaffilmark{2,3}}
+
+\altaffiltext{1}{Kavli Institute for Cosmology / Cavendish Laboratory, Cambridge, UK.}
+
+%\altaffiltext{2}{Departamento de F\'{\i}sica, Centro de
+%Investigaci\'on y de Estudios Avanzados del IPN, M\'exico.}
+  
+  \altaffiltext{3}{Instituto Avanzado de
+Cosmolog\'ia (IAC), http://www.iac.edu.mx/}
+
+
+\shortauthor{Vazquez} % \& Matos}
+
+\shorttitle{Constraining Cosmological Inflation}
+
+
+\fulladdresses{
+\item J. Alberto V\'azquez: Kavli Institute for Cosmology, Madingley Road, Cambridge CB3 0HA, UK.
+\\Astrophysics Group, Cavendish Laboratory, JJ Thomson Avenue, Cambridge CB3 0HE, UK. 
+(jv292@cam.ac.uk)
+}
+%\item Tonatiuh Matos: Departamento de F\'{\i}sica, Centro de
+%Investigaci\'on y de Estudios Avanzados del IPN, AP 14-740,07000 M\'exico D.F., M\'exico.
+%(tmatos@fis.cinvestav.mx)
+%}
+
+
+\listofauthors{J. Alberto V\'azquez} % \& Tonatiuh Matos}
+
+\indexauthor{V\'azquez J.A.}
+%\indexauthor{Matos T.}
+
+
+
+
+\abstract{
+The aim of this paper is to provide a qualitative introduction to the Inflationary theory
+and its relation with current cosmological observations.
+Inflation solves some of the fundamental problems which challenge the 
+Standard Big Bang cosmology i.e. Flatness, Horizon and Monopole problem,
+and additionally explains the initial conditions for the 
+Large-Scale Structure observed in the Universe, such as galaxies.
+We describe the general properties of this solution carried out by
+a single scalar field.
+Finally, with the use of current and future surveys,
+we show constraints on the Inflationary parameters $(n_{\rm s},r)$ which allow us to 
+make the connection between the theoretical and observational cosmology. 
+In this way, with the latest observational results, it is possible to choose or 
+at least to constrain the right Inflationary model, parameterised by the 
+scalar field potential $V(\phi)$.
+}
+
+
+\resumen{
+El objetivo de este art\'iculo es ofrecer una introducci\'on cualitativa 
+a la teor\'ia de la Inflaci\'on Cosm\'ologica y su relaci\'on con las observaciones
+cosmol\'ogicas actuales. Inflaci\'on resuelve algunos de los problemas fundamentales que 
+desaf\'ian al modelo est\'andar de la cosmolog\'ia (Big Bang), 
+por ejemplo, el problema de la Planicidad, Horizonte y la inexistencia de Monopolos,
+y adem\'as de resolver estos problemas, explica el origen de la estructura a gran escala del 
+Universo, como son las galaxias.
+Se describen las caracter\'isticas generales de esta soluci\'on llevada a cabo por
+un campo escalar.
+Por \'ultimo, con el uso de recientes (y futuros) estudios, se presentan constricciones de los par\'ametros 
+inflacionarios  $(n_{\rm s},r)$ que nos permitir\'an realizar la conexi\'on 
+entre la teor\'ia y las observaciones cosmol\'ogicas. De \'esta manera, con los \'ultimos 
+resultados observacionales, es posible elegir o al menos limitar el modelo inflacionario correcto, 
+parametrizado por el potencial de campo escalar $ V(\phi) $.
+}
+
+\addkeyword{cosmology: cosmological parameters}
+\addkeyword{cosmology: observations}
+\addkeyword{cosmology: inflation}
+
+\begin{document}
+% Typeset article header
+
+  \maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%
+\section{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%
+
+Nowadays, the Standard Big Bang (SBB) cosmology is the most accepted model describing 
+the central features of the observed Universe. This model has been successfully proved on 
+cosmological levels, for instance, numerical simulations on the structure formation of galaxies,
+galaxy clusters and so on are in good agreement with astronomical observations \citep{Teg, Sping}. 
+The SBB model also predicts the fluctuations on the temperature observed in the Cosmic 
+Microwave Background radiation (CMB) with high degree of accuracy: 
+inhomogeneities of about one part in one hundred thousand \citep{Komat}.
+ These two predictions, amongst many others, are the great success of 
+the SBB cosmology. Nevertheless, %it is still a model and cannot be considered 
+%as the final theory. That is, 
+when we look at cosmological observations, there might seem to exist certain 
+inconsistencies or unexplained features in contrast   with expected by 
+the theory. Some of these unsatisfactory aspects led to the 
+emergence of the Inflationary model \citep{Guth, Linde, Linde2, Steinhardt}.
+
+In this work, we briefly present some of the relevant shortcomings the standard 
+cosmology is dealing with and a short review is carried out about the scalar fields as  
+promising solution. Moreover, it is shown how an inflationary single-field model can be completely described 
+by only specifying its potential form $V(\phi)$. 
+Based on the slow-roll approximation, it is found that the observational parameters 
+which allow us to make the connexion with experiments are given by: 
+the amplitude of density perturbation $\delta_H$, the scalar spectral index $n_{\rm s}$
+and the tensor-to-scalar ratio $r$.
+Finally, the theoretical predictions for different scalar field potentials are shown and 
+compared with current observational data on the phase-space parameter $n_{\rm s}-r$, 
+thus, constraining the number of candidates and making predictions on the shape of $V(\phi)$. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%
+\section{Problems in the SBB Model}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%
+
+Before starting with the theoretical description, let us consider some assumptions on which the
+SBB model is built \citep{Coles}:
+
+1) The physical laws at the present time can be extrapolated further back in time and also be
+ considered as valid in the early Universe. In this context, gravity is described by
+ the theory of General Relativity without a cosmological constant ($\Lambda$) up to the Plank era.  
+
+ 2) The cosmological principle holds: ``There do not exist preferred places in the Universe".
+ This is telling us that the properties of the Universe at large-scale must be the homogeneity and isotropy,
+both of them encoded on the Friedmann-Robertson-Walker (FRW) metric
+
+\begin{equation}
+ ds^2= -dt^2 + a^2(t)\left[ \frac{dr^2}{1-kr^2} +r^2 (d\theta^2 +sin^2\theta\, d\phi^2) \right],
+\end{equation}
+
+\noindent
+where $(t,r,\theta,\phi)$ describe the time-polar coordinates; the spatial curvature is given by the 
+constant $k$ and the scale-factor $a(t)$ represents the physical size of the Universe.
+  
+ 3) The anisotropic Universe is well described by a linear expansion of the metric about the 
+ FRW background:
+ 
+\beq \label{eq:metric}
+g_{\mu \nu}(\textbf{x},t)= g_{\mu \nu}^{FRW}(\textbf{x},t)+h_{\mu \nu}(\textbf{x},t).
+\eeq
+
+To avoid long calculations and make this article accessible to young scientists, many 
+technical details have been omitted or simplified; 
+we encourage the reader to check out the vast amount of literature about the Inflationary theory
+ \citep{LiddleLyth, Liddle, Kolbbo, Dodelson, Lindeb}.
+\\
+
+To describe the general properties of the Universe, we assume its dynamics is governed by a source treated as a
+perfect fluid with pressure $p(t)$ and density $\rho(t)$. Both quantities may often be related
+via an equation of state $p=p(\rho)$. Some of the well studied cases are  
+
+\begin{eqnarray}
+p&=& \frac{\rho}{3} \qquad \qquad {\rm radiation}, \nonumber \\
+p&=&0 \qquad \qquad \quad {\rm dust}, \\
+p&=&-\rho \qquad \qquad \quad \Lambda. \nonumber
+\end{eqnarray}
+
+\noindent
+The Einstein equations for these kind of constituents, neglecting the cosmological 
+constant $\Lambda$ contribution, are given by:
+
+\noindent
+The {\bf Friedmann equation}
+\beq\label{eq:Friedmann}
+H^2  \equiv   \frac{8\pi}{3 m^2_{Pl}} \rho  - \frac{k}{a^2}, 
+\eeq
+
+\noindent
+and the {\bf acceleration equation}
+\beq \label{eq:Acce}
+\frac{\ddot{a}}{a}  =   - \frac{4\pi }{3 m^2_{Pl}} (\rho +3p).
+\eeq
+
+\noindent
+The energy conservation for the fluids is described by the {\bf fluid equation}
+
+\begin{equation}
+\dot \rho + 3H(\rho + p)=0,
+\end{equation}
+
+\noindent
+where overdots mean time derivative and $H \equiv \dot a/a$ defines the \textit{Hubble parameter}. Hereafter we employ natural units
+$c=\hbar=1$; the Planck mass $m_{Pl}$ is related with the gravitational constant $G$ through $G\equiv m^{-2}_{Pl}$.
+
+
+We notice, from (\ref{eq:Friedmann}), that for a particular 
+Hubble parameter there exists a particular density for which the universe is spatially flat 
+$(k=0)$. This is known as the {\it critical density} $\rho_c$ and is given by
+
+\beq
+\rho_c(t)\, =\, \frac{3 m^2_{Pl} \,H^2}{8\pi},
+\eeq
+
+\noindent
+where $\rho_c$ is a function of time due to the presence of $H$. In particular, its present 
+value is denoted as $\rho_{c,0}=1.88\, h^2\, \times 10^{-26}$ kg m$^{-3}$, or in terms of more 
+convenient units taking into account large scales in the 
+Universe,   $\rho_{c,0}= 2.78 \, h^{-1}\, \times 10^{11} M_{\odot} /(h^{-1} {\rm Mpc})^3 $;
+with the solar mass denoted by $M_{\odot}=1.988\times 10^{33}$g
+ and $h$ parameterises the present value of the Hubble parameter as
+
+\beq
+H_0 = 100 h\, {\rm km\,s}^{-1}{\rm Mpc}^{-1} = \frac{h}{3000}{\rm Mpc}^{-1}.
+\eeq
+
+\noindent
+The latest value for the Hubble parameter obtained by the \textit{Hubble Space Telescope}
+is quoted to be \citep{Riess}
+
+\beq
+ H_0= 74.2 \pm 3.6 \, {\rm km s}^{-1} {\rm Mpc}^{-1}.
+\eeq
+%
+Usually, it is more useful to measure the energy density as a fraction of the critical density,
+defining the \textit{density parameter} $\Omega_i= \rho_i / \rho_c$. The label $i$ represents
+different constituents of the Universe, such as radiation or matter. 
+Then, the Friedmann equation (\ref{eq:Friedmann}) can then be written in such a way to
+directly relate the density parameter and the curvature of the Universe as
+
+\begin{equation} \label{eq:curvature}
+ \Omega -1={k \over a^2H^2}.
+\end{equation}
+%
+Thus, the correspondence between the matter content $\Omega$ and the space-time 
+curvature for different $k$ values is: 
+\begin{itemize}
+\item Open Universe : $0<\Omega<1: \, k<0: \, \rho<\rho_c$. 
+\item Flat Universe       : $\Omega=1: \, k=0: \, \rho=\rho_c$. 
+\item Closed Universe: $\Omega>1: \, k>0: \, \rho>\rho_c$.
+\end{itemize}
+
+   
+\noindent
+Current cosmological observations, based on the standard model, suggest the present value of 
+$\Omega$ is \citep{Komat}
+
+\beq \label{eq:Omega}
+\Omega_0=1.00\pm 0.002,
+\eeq
+%
+that is, the present Universe is very nearly flat.
+\\
+
+%\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\textbf{\large Shortcomings}
+\end{center}
+
+\vskip 10pt
+
+\textbf{Flatness problem}
+\vskip 10pt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+We notice that an special case of equation (\ref{eq:curvature}) is $\Omega=1$. 
+If at the beginning the Universe was 
+perfectly flat,  then it remains so for all time. Nevertheless, a flat geometry is an unstable
+critical situation, that is, even a tiny deviation from it, $\Omega$ would evolve 
+quite different and very quickly the Universe would become more curved. 
+This can be seen as a consequence due to $aH$ is a decreasing function of time 
+during radiation or matter domination epoch.
+We observe it from (\ref{eq:curvature}):
+%
+
+\bea
+&\mid \Omega-1\mid & \, \propto \, t  \hspace{1cm} {\rm radiation\,\, domination},\nonumber \\ 
+&\mid \Omega-1\mid & \, \propto \, t^{2/3}  \hspace{1cm} {\rm dust\,\, domination}. \nonumber
+\eea
+
+\noindent
+Since the present age of the Universe is estimated to be $t_0 \simeq 10^{17} 
+\, $sec \citep{Larson}, from the above equation we can 
+deduce the required value of $\mid \Omega-1\mid$ at different early-times in order to 
+obtain the correct value of spatial-geometry at present time. For instance, let us consider some 
+particular epochs in a nearly flat universe,
+
+\begin{itemize}
+\item Decoupling  $(t \simeq 10^{13}\, {\rm sec})$, we need $\mid \Omega-1 \mid$ $\le 10^{-3}$.
+\item  Nucleosynthesis $(t \simeq 1\, {\rm sec})$, we need $\mid \Omega-1 \mid$ $\le 10^{-16}$.
+\item  Planck epoch $(t \simeq 10^{-43}\, {\rm sec})$, we need $\mid \Omega-1 \mid$  $\le 10^{-64}$.
+\end{itemize}
+% 
+%
+Because there is no reason to prefer a Universe with critical density, hence
+$\mid \Omega-1\mid$ should not necessarily be exactly zero. 
+Consequently, at early times 
+$\mid \Omega-1\mid$ have to be fine-tuned extremely close to zero in order to reach 
+its actual observed value.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%
+\vskip 16pt
+\textbf{Horizon problem} 
+\vskip 10pt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The horizon problem is one of the most important problems in the Big Bang model,
+it refers to the communication between different regions of the Universe. 
+%
+Bearing in mind the \textit{Anthropic Cosmological Principle} holds 
+\citep{Barrow, Coles}, which is intimately connected
+with the existence of the Big Bang, the age of the Universe is a finite quantity and hence
+even light should have only travelled a finite distance by any given time. 
+
+
+According the standard cosmology, photons decoupled from the rest of the 
+components at temperatures about $T_{dec}\approx 0.3\, eV$ at redshift
+$z_{dec} \approx 1100$, from this time on photons free-streamed and travelled basically
+ uninterrupted until reach us, giving rise to the region known as the Observable Universe.
+ This spherical surface at which decoupling process occurred is called 
+\textit{surface of last scattering}.
+The primordial photons are responsible for the CMB observed today, then looking at the
+fluctuations is analogous of taking a picture of the universe at this time 
+($t_{dec}\approx 380,000$ yrs old), see Figure \ref{fig:wmap5}.
+
+\begin{figure}[ht] 
+\centerline{ \epsfxsize=210pt \epsfbox{wmap7.png} }
+\caption{Temperature fluctuations observed in the CMB using 
+ WMAP  seven year data \citep{Gold}. }
+\label{fig:wmap5}
+\end{figure}
+
+Figure \ref{fig:wmap5} shows light seen in all directions of the sky, 
+these photons randomly distributed have nearly the same temperature $T_0= 2.725$ K 
+plus small fluctuations (about one part in one hundred thousand).
+ As we have already noted, being at the same 
+temperature is a property of thermal equilibrium, thus observations are easily explained 
+if different regions of the sky have been able to interact and moved towards thermal 
+equilibrium. In other words, the isotropy observed in the CMB might imply that the radiation was 
+homogeneous and isotropic in regions located on the last scattering surface.
+
+Oddly, the comoving horizon over which causal interactions occurred before  
+photons decoupled was significantly smaller than the comoving distance 
+that radiation travelled after decoupling.
+This means that photons coming from separated sky regions by more than the
+horizon scale at last scattering, typically about $2^\circ$, would not 
+have been  able to interact and established thermal equilibrium before decoupling. 
+A simple calculation displays that at decoupling time the comoving horizon was
+90 $h^{-1}$ Mpc and would be stretched up to 2998 $h^{-1}$ Mpc at present time.
+Then, the microwave background should have consisted of about $10^4$ causally 
+disconnected regions.  
+Therefore, the Big Bang model by itself does not offer an explanation on why
+temperatures seen in opposite sides of the sky are so accurately the same; the homogeneity
+must have been part of the initial conditions. 
+\\
+
+On the other hand, the microwave background is not perfectly isotropic, but instead exhibits
+small fluctuations as detected by, initially, the Cosmic Background Explorer satellite (COBE) \citep{Smooth} and 
+now, with improved measurements by the Wilkinson Microwave Anisotropy Probe (WMAP)
+\citep{wmap5, Larson}. These tiny irregularities are thought to be the `seeds' that grew 
+up until become the structure nowadays observed in the Universe. 
+\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%
+\vskip 16pt
+\textbf{Monopole problem} 
+\vskip 10pt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Following the line to find out the simplest theory to describe entirely the laws of the Universe,
+several models in particle physics were suggested to unified three of the 
+four forces presented in the Standard Model of Particle Physics (SM): strong force, described
+by the group $SU(3)$, weak and electro-magnetic force, with associated group $SU(2)\otimes U(1)$. 
+These classes of theories are called \textit{Grand Unified Theories (GUT)} \citep{Georgi}.
+ %
+ An important point to mention in favour of GUT,  is that they are the only theories which 
+ predict the equality electron-proton charge magnitude. Also, there are good reasons to 
+ believe that the origin of \textit{baryon asymmetry} might have been generated by GUTs \citep{Kolb83}.
+\\
+
+Basically, these kind of theories assert that in the early Universe ($t \sim 10^{-43}\, $sec), 
+at highly extreme temperatures ($T_{GUT}\sim 10^{32} \, $K), existed a unified or 
+\textit{symmetric phase} described by a group $G$. As the Universe
+temperature dropped off, it went through many different phase transitions until reach 
+the matter particles such as electrons, protons, neutrons, photons.
+%
+When a phase transition happens, its symmetry is broken, thus the symmetry group changes by itself.
+For instance: 
+ \begin{itemize}
+ \item GUT transition: $$G \to SU(3)\,\otimes\, SU(2)\, \otimes \, U(1).$$
+ \item Electroweak transition: $$SU(3)\,\otimes\, SU(2)\, \otimes \, U(1) \to SU(3)\, \otimes \, U(1).$$ 
+\end{itemize}
+
+\noindent
+The phase transitions have plenty of implications, one of the most important is the
+\textit{topological defects} production, that depends on the type of symmetry breaking 
+and the spatial dimension \citep{Vilenkin}, some of them are:   
+
+\begin{itemize}
+\item Monopoles (zero dimensional).
+\item Strings (one dimensional).
+\item Domain Walls (two dimensional).
+\item Textures (three dimensional).
+\end{itemize}
+
+\noindent
+Therefore, monopoles are expected to emerge as a consequence of unification models. 
+Besides that, from particle physics models, monopoles would have a mass of $10^6$ orders the proton 
+mass. Hence, based on their non-relativitic character, 
+a crude calculation predicts an extremely high abundance at present time \citep{Coles}
+$$
+\Omega_M \simeq 10^{16}.
+$$
+%
+According to this prediction, the Universe would be dominated by magnetic monopoles.
+However, in contrast with current observations, no one
+has found anyone \citep{Ambrosio02}. 
+\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Cosmological Inflation}
+\vskip 6pt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The inflationary model offers the most elegant way so far proposed to solve the problems
+aforementioned and therefore to understand why the universe is so remarkably in agreement 
+with the standard cosmology. It does not replace the Big Bang model, but rather it is considered 
+as an `auxiliary patch' which occurred at the earliest stages without disturbing any of its successes.
+\\
+
+\textit{Inflation} is defined as the epoch in the evolution of the Universe in which the scale factor 
+is quickly accelerated in just a fraction of a second:
+
+\bea \label{eq:inflation}
+{\rm INFLATION} &\Longleftrightarrow&~~\ddot a>0 \\
+&\Longleftrightarrow& \frac{d}{dt}\left( \frac{{1}}{aH}\right)<0. \label{eq:inflation2}
+\eea
+
+\noindent
+The last term corresponds to the comoving Hubble length 
+$1/(aH)$ which is interpreted as the observable 
+Universe becoming smaller during inflation. This process allows our observable
+region to lie within a region that was inside the Hubble radius at the beginning of inflation, 
+in \citet{Liddle2} words ``is something
+similar to zooming in on a small region of the initial universe", see
+Figure \ref{fig:Liddle}.
+\\
+
+\begin{figure}[ht] 
+\centerline{ \epsfxsize=180pt \epsfbox{infla_1} }
+\caption{Schematic behaviour 
+of the comoving Hubble radius during the Inflationary period}% \citep{LiddleLyth}.}
+\label{fig:Liddle}
+\end{figure}
+
+From the acceleration equation (\ref{eq:Acce}) we can write the condition for inflation in 
+terms of the material required to drive the expansion
+
+\beq
+\ddot a>0 \Longleftrightarrow (\rho +3p)<0.
+\label{gg}
+\eeq
+
+\noindent
+Because in standard physics it is always postulated $\rho$ as positive, 
+to satisfy the acceleration condition it is necessary for the overall pressure to have 
+
+\beq 
+{\rm INFLATION} ~~ \Longleftrightarrow~~p<-\rho/3.
+\eeq
+
+\noindent
+Nonetheless, neither a radiation nor a matter dominated epoch satisfies such condition. 
+Let us postpone for a while the problem of finding a `candidate' which may satisfy this inflationary condition.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Solution of the Big Bang Problems}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent
+\textbf {Flatness problem}
+\vskip 6pt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+If this brief period of accelerated expansion occurred, then it is possible that the 
+aforementioned problems of the Big Bang could be solved. 
+A typical solution is a universe possessing a cosmological constant $\Lambda$, which can be 
+interpreted as a perfect fluid with equation of state $p=-\rho$. Having this condition, 
+since H is constant, we observe from the Friedmann equation (\ref{eq:Friedmann}) that 
+the universe is exponentially expanded:
+%
+\beq
+a(t)\propto \exp(Ht),
+\eeq
+then, the condition  
+(\ref{eq:inflation2}) is naturally fulfilled. This epoch is called \textit{de Sitter stage}.
+However, postulating a cosmological constant might create more problems than
+solve by itself \citep{Carrol01}.
+\\
+
+Let us look what happens when a general solution is considered.
+If somehow there was an accelerated expansion, $1/(aH)$ tends to be smaller on time and hence,
+by the expression (\ref{eq:curvature}), $\Omega$ is driven towards the unity rather than away from it. 
+Then, we may ask ourselves by how much should $1/(aH)$ decrease. 
+If the inflationary period started at time $t=t_i$ 
+and ended up approximately at the beginning of the radiation dominated era ($t=t_f$), then 
+
+$$
+\mid \Omega -1\mid_{t=t_f}\sim10^{-60},
+$$
+and
+\beq
+\frac{\mid \Omega -1\mid_{t=t_f}}{\mid \Omega -1\mid_{t=t_i}}= \left( a_i \over a_f \right)^2\equiv e^{-2N}.
+\eeq
+\\
+%
+So, the required condition to reproduce the value of $\Omega_0$ today is 
+that inflation lasted for at least $N\equiv\ln a \gtrsim 60 $, then $\Omega$ will be
+extraordinarily close to one that we still observe it today.
+In this sense, inflation magnifies the curvature radius of the universe, so 
+locally the universe seems to be flat with a great precision.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip 16pt
+\noindent
+\textbf{Horizon problem}
+\vskip 6pt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+As we have already seen, during inflation the universe expands drastically and there is a 
+reduction in the comoving Hubble length. This allowed a tiny region located inside the 
+Hubble radius to evolve and constitute our present observable Universe. 
+Fluctuations were hence stretched outside of the horizon during inflation and re-entered the horizon 
+in the late Universe, see Figure \ref{fig:Liddle}. Scales that were outside the horizon at CMB decoupling 
+were in fact inside the horizon before inflation. The region of space corresponding to the 
+observable universe therefore was in thermal equilibrium before inflation and the uniformity 
+of the CMB is essentially explained.
+\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip 16pt
+\noindent
+\textbf{Monopole problem}
+\vskip 6pt
+
+The monopole problem was initially the motivation to develop the Inflationary
+cosmology \citep{Guth2}.
+%
+During the inflationary epoch, the Universe led to a dramatic expansion
+over which the density of the unwanted particles were diluted away. Generating enough
+expansion, the dilution made sure the particles stayed completely out of our observable Universe
+making pretty difficult to localise a single monopole.     
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Single-field inflation}
+\vskip 6pt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+There currently exists a broad diversity of models that have been proposed for inflation 
+\citep{LiddleLyth, Olive, Lyth}. In this section we present the scalar fields as good candidates 
+to drive inflation and explain how relate theoretical predictions to observable quantities. 
+Here, we limit ourselves to models based on general gravity, i.e. derived from the
+Einstein-Hilbert action, and single-field models described by a slow-roll scalar field $\phi$.
+\\
+
+Inflation relies on the existence of an early epoch in the universe dominated by a very 
+different form of energy; remember the requirement of the unusual property of a negative 
+pressure. Such condition can be satisfied by a simple scalar field (spin-0 particle). 
+The scalar field which drives the Universe to an inflationary epoch is often termed 
+as the \textit{inflaton field}. 
+%
+
+Let us consider a scalar field minimally coupled to gravity, with an arbitrary
+potential $V(\phi)$ and Lagrangian density $\mathcal{L}$ specified by 
+
+
+\begin{equation}
+S=\int d^4x\, \sqrt{-g}\,\mathcal{L}=\int\, d^4x\, \sqrt{-g}\,
+\left[\frac{1}{2}
+\partial_{\mu}\phi
+\partial^{\mu}\phi -V(\phi)\right].
+\end{equation}
+%
+%
+The energy-momentum tensor corresponding to this scalar field Lagrangian is given by
+\beq
+T_{\mu\nu}=\partial_{\mu}\phi \partial_{\nu}\phi
+-g_{\mu\nu}\, \mathcal{L}.
+\eeq
+%
+In the same way as the perfect fluid treatment, the 
+energy density $\rho_\phi$ and pressure density $p_\phi$ in FRW metric are found to be 
+
+\begin{eqnarray}
+T_{00}=\rho_{\phi}=\frac{1}{2}\dot{\phi}^2 + V(\phi)+ 
+\frac{(\nabla \phi)^2}{2a^2},  \\
+T_{ii}=p_{\phi}=\frac{1}{2}\dot{\phi}^2 - V(\phi)- \frac{(\nabla
+\phi)^2}{6a^2},
+\end{eqnarray}
+
+\noindent
+with equation of state corresponding to
+ 
+\begin{equation}
+w = \frac{P}{\rho}=\frac{\frac{1}{2}\dot \phi^2-V(\phi)}{\frac{1}{2}\dot \phi^2+V(\phi)}.
+\end{equation}
+
+\noindent
+We can now split the inflaton field as
+\beq \label{eq:split}
+\phi({\bf x},t)=\phi_{0}(t)+\delta\phi({\bf x},t),
+\eeq
+where $\phi_{0}$ is considered a classical field, that is, 
+the mean value of the inflaton field on the homogeneous and isotropic state, 
+whereas $\delta\phi({\bf x},t)$ describes the quantum fluctuations around $\phi_{0}$.
+
+\noindent
+The evolution equation for the background field $\phi_0$  is given by
+\begin{equation}
+\ddot{\phi_0}+ 3H\dot{\phi_0}= -V'(\phi_0),
+\label{eq:motion1}
+\end{equation}
+
+\noindent
+and moreover, the Friedmann equation (\ref{eq:Friedmann}) with negligible curvature becomes
+
+\beq \label{eq:motion2}
+H^2 = \frac{8\pi}{3m^2_{Pl}} \left[{1 \over 2} \dot\phi_0^2 +V(\phi_0)\right],
+\eeq
+where we have used 
+primes as derivatives with respect to the scalar field $\phi_0$. 
+\\
+
+ From the structure of the effective energy density and pressure, the acceleration
+  equation (\ref{eq:Acce}) becomes, 
+ 
+ \beq
+ {\ddot a \over a} = -{8\pi \over m_{Pl}^2}\left(\dot \phi_0^2-V(\phi_0) \right).
+ \eeq
+ 
+ \noindent
+ Therefore, the inflationary condition to be satisfied is $\dot \phi_0^2 < V(\phi_0)$, and 
+ it is easily fulfilled with a suitably flat potential. Now on we will omit the subscript
+ `0' by convenience.
+
+
+
+\subsection{Slow-roll approximation}
+\vskip 6pt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+As we have noted, a period of accelerated expansion can be created by 
+the cosmological constant $(\Lambda)$ and hence solve the problems aforementioned.
+After a brief period of time, inflation must end up and its energy being converted into conventional
+matter/radiation, this process is called \textit{reheating}. In a Universe dominated by a 
+cosmological constant the reheating process is seen as $\Lambda$ decaying into 
+conventional particles. However, claiming that $\Lambda$ is able to decay is still a 
+naive way to face the problem.   
+%
+On the other hand, scalar fields have the property to behave like a 
+\textit{dynamical cosmological constant}. Based on this approach, it is useful to
+propose a scalar field model starting with a nearly flat potential, i.e. initially 
+satisfies the condition $\dot \phi^2 \ll V(\phi)$. In this case the scalar field is slowly rolling 
+down its potential, by obvious reasons, such approximation is called \textit{slow-roll} 
+\citep{Liddle92, Liddle94}.  Based on this approach, $\ddot \phi$ is negligible because the Universe is 
+ dominated by the cosmological expansion. The equations of motion (\ref{eq:motion1}) 
+ and (\ref{eq:motion2}), for slow-roll inflation, then become
+ 
+\bea \label{eq:slow}
+3H\dot{\phi} ~~ &\simeq& ~~ -V'(\phi), \\
+H^2 ~~ & \simeq& ~~ \frac{8\pi}{3m^2_{Pl}} V(\phi). \label{eq:slow2}
+\eea
+
+\noindent
+It is easily verifiable that the slow-roll approximation requires the slope 
+and curvature of the potential to be small: $V', V'' \ll V$.
+\\
+
+The Inflationary process can be summarised as an accelerated Universe which takes place when 
+the kinetic part of the inflaton field is subdominant over the potential field $V(\phi)$ term. 
+Then, when both quantities become comparable the Inflationary period ends up given 
+rise finally to the reheating process, see Fig. \ref{fig:Field}. 
+
+
+\begin{figure}[ht] 
+\centerline{ \epsfxsize=180pt \epsfbox{Field.pdf} }
+\caption{Schematic Inflationary process \citep{Baumann}.}
+\label{fig:Field}
+\end{figure}
+
+\vspace{0.5cm}
+It is now useful to introduce the potential slow-roll parameters 
+$\epsilon_{\rm v}$ and $\eta_{\rm v}$ in the following way \citep{Liddle92}
+
+
+\bea
+\epsilon_{\rm v}(\phi) &\equiv&{m^2_{Pl} \over 16 \pi } \left({V'\left(\phi\right) \over V\left(\phi\right)}\right)^2, 
+\label{eq:epsi} \\
+\eta_{\rm v}\left(\phi\right) &\equiv& \frac{m^2_{Pl}}{8\pi} {V''\left(\phi\right) \over V\left(\phi\right)} \label{eq:eta}.
+\eea
+%
+Equations (\ref{eq:slow}) and (\ref{eq:slow2}) are in agreement with the slow-roll approximation
+when the following conditions hold
+
+\begin{equation*}
+\epsilon_{\rm v}(\phi) \ll 1,  \,\,\,\,\,\,  \mid \eta_{\rm v}(\phi)\mid \ll 1.
+\end{equation*}
+
+\noindent
+These conditions are sufficient but not necessary, because the validity of the slow-roll
+approximations was a requirement in its derivation.
+%
+The physical meaning of $\epsilon_{\rm v}(\phi)$ can be explicitly seen by expressing equation (\ref{eq:inflation})
+ in terms of $\phi$, then, the inflationary condition is equivalent to
+ 
+ \begin{equation}
+ {\ddot a \over a} ~~ > ~~ 0 ~~ \Longrightarrow ~~ \epsilon_{\rm v}(\phi) < ~~  1.
+\end{equation}
+
+\noindent
+Hence, inflation ends up when the value $\epsilon_{\rm v} (\phi_{end})= 1$ is approached.
+\\
+
+Within these approximations, it is straightforward to find out the scale factor $a$ between
+the beginning and the end of inflation. Because the size of the expansion is 
+an enormous quantity, it is useful to compute it in terms of the 
+ {\it e}-fold number $N$ defined by 
+ 
+\begin{equation} \label{eq:N}
+N \equiv \ln {a(t_{end}) \over a(t)}=
+\int_{t}^{t_e}{H\,dt} \simeq 
+{8\pi \over m^2_{Pl}} \int_{\phi_e}^{\phi} {V \over V'} d\phi .
+\end{equation}
+
+\noindent
+To give an estimate of the number of \textit{e}-folds $N$, let us consider the evolution of the Universe 
+can be split into different epochs:
+
+\begin{itemize}
+\item Inflationary era: horizon crossing ($k=aH$) $\to$ end of inflation $a_{end}$.
+\item Radiation era: reheating $\to$ matter-radiation equality $a_{eq}$.
+\item Matter era: $a_{eq}$ $\to$ present $a_{0}$.
+\end{itemize}
+
+\noindent
+Assuming the transition between one era to another is instantaneous, then $N(k)= \ln ({a_k / a_0})$
+can be easily computed with:
+$$ 
+{k\over a_0 H_0}\,=\,{a_k H_k \over a_0 H_0}\,=\,{a_k\over a_{end}}{a_{end}\over a_{reh}}
+{a_{reh}\over a_{eq}}{a_{eq} \over a_0}{H_k\over H_0}.
+$$
+Then, one has \citep{LiddleLyth}
+
+$$
+N(k)=62-\ln{k \over a_0 H_0}-\ln{10^{16} GeV \over V_k^{1/4}}+\ln{V_k^{1/4} \over V_{end}}-
+{1 \over 3}\ln{V_{end}^{1/4} \over \rho_{reh}^{1/4}}.
+$$
+%
+The last three terms are small quantities related with energy scales during the inflationary 
+process and usually can be ignored.
+The precise value for the second quantity depends on the model as well as the 
+COBE normalisation, however it does not present any significant change to the total 
+amount of \textit{e}-folds. Thus, the value for total \textit{e}-foldings is ranged from 50-70 \citep{Lyth}.
+\\
+
+As we noted, the parameters to describe inflation can be presented
+as functions of the scalar field potential. That is, specifying an inflationary 
+model with a single scalar field is just selecting an inflationary potential $V(\phi)$. 
+In order to exemplify our point, let us consider the following example.
+
+
+The potential which describes a massive scalar field is given by:
+
+\beq \label{eq:mass}
+V(\phi)= \frac{1}{2}m^2 \phi^2.
+\eeq
+
+\noindent
+Considering the slow-roll approximation, equations (\ref{eq:motion1}) and (\ref{eq:motion2}) become:
+%
+\bea
+3H\dot \phi &=& -m^2 \phi, \\
+H^2 &=& \frac{4\pi m^2 \phi^2}{3 m_{pl}^2}.\nonumber
+\eea
+\noindent
+Thus, the dynamics of this type of model is described by
+
+\bea
+\phi(t)&=&\phi_i - \frac{m m_{pl}}{\sqrt{12 \pi}},\\
+a(t)&=& a_i \exp\left[\sqrt{\frac{4\pi}{3}}\frac{m}{m_{pl}}\left( \phi_i t - \frac{m m_{pl}}{\sqrt{48 \pi}}t^2 \right) \right], \nonumber
+\eea
+
+\noindent
+where $\phi_i$ and $a_i$ represent the initial conditions at a given initial time $t=t_i$.
+The slow-roll parameters for this particular potential are computed from 
+equations (\ref{eq:epsi}) and (\ref{eq:eta})
+
+\beq
+\epsilon_{\rm v}=\eta_{\rm v}= \frac{m_{pl}^2}{4\pi} \frac{1}{\phi^2}, 
+\eeq
+
+\noindent
+that is, an inflationary epoch takes place whilst the condition $|\phi|> {m_{pl}}/\sqrt{4\pi}$ 
+is satisfied, and the total amount lapse during this accelerated period is encoded on the e-folds number
+
+\beq
+N_{tot}= \frac{2\pi}{m_{pl}^2}\left[\phi^2_i - \phi^2_e \right].
+\eeq 
+
+The steps shown before might, in principle, apply to any inflationary single-field model. 
+That is, the general information we need to characterised 
+cosmological inflation is specified by  only its potential. 
+
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Cosmological Perturbations}
+
+Inflationary models have the merit that they do not only explain the 
+ homogeneity of the universe on large-scales,
+but also provide a theory  for explaining the observed level of {\em
+anisotropy}. During the inflationary period, quantum fluctuations of the field 
+were driven to scales much larger than the Hubble horizon. Then in this process, the fluctuations
+were frozen and turned into metric perturbations \citep{Mukhanov}. 
+%
+Metric perturbations created during inflation can be described in terms of two types of perturbations.
+The {\it scalar, or curvature,} perturbations are coupled with matter in the
+universe and form the initial ``seeds'' of structure formation. On the other hand, although the 
+{\it tensor perturbations} do not couple to matter, they are associated
+to the generation of gravitational waves.
+As we shall see, scalar and tensor perturbations are seen as the important components to 
+ the CMB anisotropy \citep{Hu}. 
+\\
+
+In the same way we have introduced the density parameter for large scales, on small scales
+we employ the \textit{density contrast} defined by $\delta \equiv \delta \rho / \rho$.
+We now on assume the density contrast for different species in the Universe satisfies the 
+\textit{adiabatic conditions}
+ \beq
+ {1 \over 3}\delta_{{\bf k} b}={1 \over 3}\delta_{{\bf k} c}={1 \over 4}\delta_{{\bf k} \gamma}
+ \left( ={1 \over 4}\delta_{{\bf k} } \right).
+ \eeq 
+
+\noindent
+The most general perturbation on the density is described by a linear combination between adiabatic
+perturbation as well as \textit{isocurvature perturbation}, which the latter one plays and important role 
+when more than one scalar field is considered  \citep{LiddleLyth}.
+
+
+We introduce the \textit{primordial curvature perturbation} $\mathcal{R}_k(t)$, which has the property 
+to be constant within few Hubble times after the horizon exit given by $k=aH$.  
+This constant value is called the
+\textit{primordial value} and is related with the scalar field perturbation $\delta \phi$ by
+\beq
+\mathcal{R}_k=-\left[ {H \over \dot \phi}\,\, \delta \phi_k \right]_{k=aH}.
+\eeq
+%
+\noindent
+ Then, the  primordial curvature power spectrum $\cal P_{\cal R}(k)$ is computed from
+ \beq\label{eq:Pk1}
+ \cal P_{\cal R}(k)=\left[\left({H \over \dot \phi} \right)^2 \cal P_{\phi}(k) \right]_{k=aH}.
+ \eeq
+ 
+ \noindent
+ When the perturbation part of $\phi({\bf x},t)$ in (\ref{eq:split}) is considered, 
+the equation of motion for $\delta \phi$ is described by
+
+\beq
+(\delta \phi_k)\ddot \,\,+3 H (\delta \phi_k)\dot \,\,+\left({k \over a}\right)^2 \delta \phi_k=0,
+\eeq
+%
+where we have assumed $\delta \phi$ is linear. This basically means that perturbations generated by
+vacuum fluctuations have uncorrelated Fourier modes, the signature of \textit{Gaussian perturbations}. 
+%
+After scalar field quantisation, the spectrum is given by
+%
+\beq\label{eq:Pk2}
+\cal P_{\phi}(k)=\left( {H \over 2\pi }\right)^2_{k=aH}.
+\eeq
+%
+Finally, from (\ref{eq:Pk2}) and (\ref{eq:Pk1}) the spectrum of the curvature perturbation is 
+
+\begin{equation}
+\cal P_{\cal R}(k) = \left[ \left({H \over \dot \phi}\right) \left({H \over 2 \pi}\right)\right]^2_{k =
+a H} .
+\end{equation}
+
+On the other hand, the creation of gravitational waves corresponds to the tensor 
+part of metric perturbation $h_{\mu \nu}$ in (\ref{eq:metric}). In Fourier space, 
+tensor perturbation $h_{ij}$ can be expressed as the superposition of two polarisation modes
+
+\beq
+h_{ij}= h_{+}\mathit{e}^{+}_{ij}+h_{\times}\mathit{e}^{\times}_{ij},
+\eeq
+%
+where $+$, $\times$ represent the longitudinal and transverse modes.
+From Einstein equations it is found that each amplitude $h_{+}$ and $h_{\times}$
+behaves as a free scalar field in the sense that
+\beq
+\psi_{+,\times}\equiv {m_{Pl} \over \sqrt 8}\,\,h_{+,\, \times}.
+\eeq 
+
+\noindent
+Therefore, each $h_{+,\, \times}$ has a spectrum $\cal P_T$ given by
+
+\beq
+\cal P_{T}(k)={8 \over m_{Pl}^2} \left({H \over 2\pi} \right)_{k=aH}^2.
+\eeq
+%
+The canonical normalisation of the field $\psi_{+,\times}$ was chosen such that,
+the \textit{ratio of tensor-to-scalar} spectra is  
+
+\begin{equation}
+r \equiv {\cal P_{T} \over \cal P_{\cal R}} =4 \pi \epsilon .
+\end{equation}
+
+During the horizon exit epoch $k=aH$, $H$ and $\dot \phi$ have
+tiny variations during few Hubble times. In this case, the scalar and tensor 
+spectra are nearly scale independent and therefore well approximated by power laws 
+%
+\bea
+\cal P_\cal R(k)  &=&\cal P_\cal R(k_0) \left( \frac{k}{k_0} \right)^{n_{\rm s}-1}, \nonumber \\
+\cal P_T(k)  &=& \cal P_T(k_0) \left( \frac{k}{k_0} \right)^{n_T} \, .
+\eea
+
+\noindent
+where the spectral indices are defined as \citep{Lidsey}
+
+\beq
+n_{\rm s}-1\equiv {d\ln \cal P_\cal R(k) \over d\ln k},\qquad
+n_T \equiv {d\ln \cal P_T(k) \over d\ln k}. 
+\eeq
+
+\noindent
+A scale-invariant spectrum, called Harrison-Zel'dovich (HZ), has constant variance
+on all length scales and it is characterised by $n_{\rm s}= 1$.
+ Small deviations from scale-invariance are also considered as a typical signature of the
+inflationary models, then 
+ the spectral indices $n_{\rm s}$ and $n_{T}$ can be expressed 
+ in terms of the slow-roll parameters $\epsilon_{\rm v}$ and $\eta_{\rm v}$, to lowest order, as:
+
+\bea \label{indices}
+n_{\rm s} - 1  &\simeq&  - 6~ \epsilon_{\rm v}(\phi) + 2~ \eta_{\rm v}(\phi), \nonumber \\
+n_T  &\simeq&  -2~ \epsilon_{\rm v}(\phi). 
+\eea
+
+\noindent
+The parameters are {\em not} completely independent each other,  but the tensor spectral 
+index is proportional to the tensor-to-scalar ratio
+$r = -2 \pi n_{T}  $.  This expression is considered as the \textit{consistency
+relation} for slow-roll inflation.  
+Hence, any inflationary model, to the lowest order in slow-roll, 
+can be described in terms of three independent parameters:
+ the amplitude of density perturbations
+ $\delta_H\equiv 2/5P_\cal R^{1/2} \approx 2 \times 10^{-5}$, the scalar spectral index $n_{\rm s}$,
+and the tensor-to-scalar ratio $r$.
+In case we need a more accurate description we have to consider higher-order effects, 
+and then include parameters for describing the running of scalar ($d n_{\rm s} / d\ln{k}$)
+and tensor ($d n_T / d\ln{k}$) index. 
+\\
+
+An important point to emphasised is that  $\delta_H$, $r$ and $n_{\rm s}$ are {\em observable} 
+parameters that nowadays are tested from several experiments. 
+This allows us to compare theoretical predictions with observational data,  
+for instance, those provided by the Cosmic Microwave Background radiation. 
+In other words, future measurements of these parameters may
+probe or at least constrain the inflationary models and therefore the shape of the inflaton potential $V(\phi)$.
+\\
+
+Let us back to the massive scalar field example in equation  (\ref{eq:mass}):
+%
+Inflation ends up when the condition $\epsilon_{\rm v}=1$ is achieved, so $\phi_{end}\simeq m_{pl}/\sqrt{4 \pi}$.
+ As we pointed out before, we are interested in models with an $e$-fold number of about $N_{tot}=60$, that is
+ \beq
+ \phi_i=\phi_{60}\simeq \sqrt{\frac{30}{\pi}}m_{pl}.
+ \eeq
+ 
+ \noindent
+ Finally, the spectral index and the tensor-scalar ratio for this potential are
+ 
+ \beq
+ n_{\rm s}-1= -\frac{m_{pl}^2}{\pi \phi_{60}^2}, \qquad r= \frac{m_{pl}^2}{\phi_{60}^2}.
+ \eeq
+
+\noindent
+If the massive scalar field potential is the right inflationary model, current observations should favour
+the values $n_s\approx 0.97$ and $r\approx 0.1$.
+\\
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Inflationary models}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+We have seen that an inflationary model is described by the specification of the 
+potential form $V(\phi)$ relevant during inflation. Then, the comparison of inflationary 
+model predictions to CMB observations reduces to the following basic steps \citep{Kinney}:
+ (1) Given a scalar field potential $V(\phi)$, compute the slow roll parameters $\epsilon_{\rm v}(\phi)$ and
+$\eta_{\rm v}(\phi)$. 
+(2) Find out $\phi_{end}$ by $\epsilon(\phi_{end})=1$. 
+(3) From (\ref{eq:N}), compute the field $\phi_{60}$.
+(4)  Compute $r$ and $n_{\rm s}$ as functions of $\phi$, and finally evaluate them at $\phi =
+\phi_{60}$ which can be tested by CMB temperature anisotropy data. 
+\\
+
+Different types of models are classified by the relation among their slow-roll 
+parameters $\epsilon$ and $\eta$, which can be reflected on different relations
+ between $r$ and $n_{\rm s}$. Hence, an appropriate parameter space to show the diversity of models 
+ is well described by the $n_{\rm s}$---$r$ plane.  
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Models}
+
+
+Even if we restrict the analysis to a simple single-field, the number of inflationary models
+available is enormous \citep{LiddleLyth, Lyth, Linde05}. Then, it is convenient to classify
+different kinds of scalar field potentials following \citep{Kinney2}. 
+%
+
+The classification is based on the behaviour of the scalar field potential during inflation.
+The three basic types are shown in Figure \ref{fig:models}.
+{\em Large field}, the field is initially displaced from an stable minimum and evolves 
+towards it. {\em Small field}, the field evolves away from an unstable maximum. 
+{\em Hybrid}, the field evolves towards a minimum with vacuum energy different to zero. 
+
+
+\begin{figure}[ht] 
+\centerline{ \epsfxsize=270pt \epsfbox{zoology.pdf} }
+\caption{Potential classification. From top to bottom:
+\textit{large field, small field and hybrid potential} \citep{Kinney2}.}
+\label{fig:models}
+\end{figure}
+%
+A general single field potential can be written in terms of a \textit{height} $\Lambda$ and a 
+\textit{width} $\mu$ as
+%
+\begin{equation}
+V\left(\phi\right) = \Lambda^4 f\left({\phi \over \mu}\right).
+\end{equation}
+%
+Different models have different forms for the function $f$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Large-field models: $-\epsilon < \eta \leq \epsilon$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\textbf{Large field} models perhaps posses the simplest type of monomial potentials.
+These kind of potentials represent the \textit{chaotic} inflationary
+scenarios \citep{Linde2}. The distinctive of these models is that the  
+shape of the effective potential is not very important in detail. That is, a region
+of the Universe where the scalar field is usually situated at $ \phi \sim m_{\rm Pl}$ 
+from the minimum of its potential will automatically lead to inflation, see Figure \ref{fig:new1}. Such
+models are described by $V''\left(\phi\right) > 0$ and $-\epsilon < \eta
+\leq \epsilon$. 
+\\
+
+ \begin{figure}
+ \begin{center}
+  \includegraphics[trim = 20mm 120mm 10mm 40mm, clip, width=7cm, height=4cm]{new2.pdf}
+	\caption{Chaotic Inflationary potential.}
+	\label{fig:new1}
+\end{center}	
+\end{figure}
+
+\noindent
+ A general set of large-field polynomial potentials can be written as
+%
+\begin{equation}
+V\left(\phi\right) = \Lambda^4 \left({\phi \over \mu}\right)^p,
+\end{equation}
+where it is enough to choose the exponent $p>1$ in order to specify a particular model.
+%
+This model gives
+\begin{eqnarray}
+n_{\rm s}-1&=&-\frac{4+2p}{4N+p}\, ,\nonumber\\
+r&=&\frac{4\pi p}{4N+p}.
+\end{eqnarray}
+
+\noindent
+In this case, gravitational waves can be sufficiently big to eventually be observed $(r\gtrsim 0.1)$.
+
+From the quadratic potential of equation (\ref{eq:mass}), we obtain
+
+\begin{equation}
+\epsilon \simeq 0.008, \quad \eta \simeq 0.008, \quad n_{\rm s} \simeq 0.97, \quad r \simeq 0.1
+\end{equation}
+
+\noindent
+In the high power limit the $V \propto \phi^p$ predictions are the same as the exponential 
+potential \citep{La}. Hence, a variant of this class of models is 
+
+\begin{equation}
+V\left(\phi\right) = \Lambda^4 \exp\left(\phi / \mu\right).
+\end{equation}
+%
+ This type of potential is a rare case presented in inflation, that is because its 
+ dynamics has an exact solution given by a power-law expansion.
+ For this case the spectral index $n_{\rm s}$ is closely related to the tensor-to-scalar ratio $r$, as 
+
+\begin{eqnarray}
+n_{\rm s}-1&=&-\frac{m^2_{pl}}{8\pi \mu^2}, \nonumber \\
+r &=& 2\pi \left(1 - n_{\rm s}\right),
+\end{eqnarray}
+%
+as we observe, the slow-roll parameters are explicitly independent of the \textit{e}-fold number $N$. 
+
+%%%%%%%%%%%%%%%%%%%%
+\subsection{Small-field models: $\eta < -\epsilon$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\textbf{Small field} models are typically described by potentials which arise 
+naturally from spontaneous symmetry breaking, these type of models are also
+known as \textit{new inflation} \citep{Steinhardt, Linde2}. 
+In this case, inflation takes place when the field is situated in a false vacuum state,
+very close to the top of the hill and rolls down to a stable minimum, see Figure \ref{fig:new2}. 
+These models are typically characterized by $V''\left(\phi\right) < 0$
+and $\eta < -\epsilon$, usually $\epsilon$ (and hence the tensor amplitude)
+is closely zero. 
+
+ \begin{figure}
+ \begin{center}
+  \includegraphics[trim = 20mm 120mm 10mm 40mm, clip, width=7cm, height=4cm]{new1.pdf}
+	\caption{New Inflationary potential.}
+	\label{fig:new2}
+ \end{center}	
+\end{figure}
+
+\noindent
+Small field potentials, can be written in the generic form as
+
+\begin{equation}
+V\left(\phi\right) = \Lambda^4 \left[1 - \left(\phi / \mu\right)^p\right],
+\end{equation}
+%
+where the exponent $p$ differs from model to model. $V(\phi)$ is usualy considered as the 
+lowest-order in a Taylor expansion from a more general potential.
+In the simplest case of spontaneous symmetry breaking with no special symmetries, 
+the dominant term is the mass term, $p = 2$, hence the model gives
+
+\bea
+n_{\rm s}-1&\simeq& -4\left( \frac{m_{\rm Pl}}{\mu}\right)^2, \nonumber \\
+r &=& 2\pi (1 - n_{\rm s}) \exp\left[- 1 - N\left(1 - n_s\right)\right].
+\eea
+%
+%
+On the other
+hand, $p > 2$ has a very different behavior. The scalar spectral index is
+\begin{equation}
+n_{\rm s}-1 = - {2 \over N} \left({p - 1 \over p - 2}\right),
+\end{equation}
+independent of $(m_{\rm Pl}/\mu)$. In addition, if it is considered $\mu < m_{\rm Pl}$ 
+the values of $r$ are restricted by
+\begin{equation}
+r < 2\pi {p \over N \left(p - 2\right)} \left[{8 \pi \over N p \left(p -
+2\right)}\right]^{p / \left(p - 2\right)}.
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Hybrid models: $0 < \epsilon < \eta$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The third class called \textbf{hybrid} frequently includes
+models which incorporate supersymmetry into inflation \citep{Linde3, Copeland}. 
+In these models, the inflaton field $\phi$ evolves
+towards a minimum of its potential, however, the minimum has a vacuum energy 
+$V(\phi_{\rm min}) = \Lambda^4$ which is different to zero. 
+In such cases, inflation continues forever unless an
+auxiliary field $\psi$ is added to interact with $\phi$ and ends inflation at some point $\phi = \phi_{\rm c}$. 
+ Such models are well described by $V''\left(\phi\right) > 0$ and $0 < \epsilon < \eta$. 
+\\
+
+The generic potential for hybrid inflation, in a similar way to large field and small field models
+are considered, is
+\begin{equation}
+V\left(\phi\right) = \Lambda^4 \left[1 + \left(\phi / \mu\right)^p\right].
+\end{equation}
+%
+For $\left({\phi_N / \mu}\right)\gg 1$ the behaviour of
+ the large-field models is recovered. Besides that, when $\left({\phi_N /
+\mu}\right)\ll 1$, the dynamics is similar to small-field models, but
+now the field is evolving towards a dynamical fixed point rather than away from it.  
+%
+Because the presence of an auxiliary field, the number of {\it e}-folds is
+
+\beq
+N(\phi)\simeq \left( {p+1 \over p+2} \right)\left[ {1 \over \eta(\phi_c) }- {1 \over \eta(\phi)}\right]. 
+\eeq
+%
+For $\phi \gg \phi_c$, $N(\phi)$ approaches the value
+%
+\beq
+N_{max}\equiv \left( {p+1 \over p+2} \right) {1 \over \eta (\phi_c)},
+\eeq
+%
+and therefore, the spectral index is given by
+ $$
+n_{\rm s}-1 \simeq 2 \left( \frac{p+1}{p+2}\right) \frac{1}{N_{max}-N}.
+ $$
+ %
+%
+As we can note, the power spectrum is \textit{blue} ($n_{\rm s}>1$) and besides that, the model presents 
+a running of the spectral index
+
+\begin{equation}
+\label{eq:dsirunning}
+{dn_{\rm s} \over d\ln{k}} = -{1 \over 2} \left({p + 2 \over p + 1}\right) 
+\left(n_{\rm s} - 1\right)^2.
+\end{equation}
+%
+ This parameter  will be very useful for higher orders and more accurate constraints in 
+ future observations. For instance, if it is considered the particular case with $p = 2$ 
+ and $n_{\rm s} = 1.2$, the running obtained is $dn_{\rm s} / d\ln{k} = -0.05$ \citep{Kinney3}. 
+
+%%%%%%%%%%%%%%%%%%%%
+\subsection{Linear models: $\eta = - \epsilon$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Linear models, $V\left(\phi\right) \propto \phi$, are located on the limit between
+large field and small field models. They are represented by $V''\left(\phi\right) = 0$ and $\eta =
+- \epsilon$. The spectral index and tensor-to-scalar ratio are given by 
+
+\beq
+n_{\rm s}-1=-{6\over 4N+1},\qquad
+r = {4\pi \over 4N+1} .
+\eeq
+
+\subsection{Other models}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
+
+There still remain several single-field models which cannot fit into this classification, 
+for instance the logarithmic potentials \citep{Barrow2}
+
+\beq
+V\left(\phi\right) =V_0\left[1+(C g^2/8\pi^2)
+\ln\left(\phi/\mu\right)\right].
+\eeq
+%
+Typically they correspond to loop corrections in a supersymmetric theory,
+where $C$ denotes the degrees of freedom coupled
+to the inflaton and $g$ is a coupling constant.  
+%
+For this potential, the inflationary parameters are
+
+\bea
+n_{\rm s}-1&\simeq& -\frac{1}{N}\left(1+\frac{3C g^2}{16 \pi^2}\right), \nonumber \\
+r&\simeq& \frac{1}{N}{Cg^2\over 4\pi}.
+ \eea
+%
+In this model, to end up inflation, an auxiliary field is needed, which is the main feature of
+hybrid models. However when it is plotted on the $n_{\rm s}$---$r$ plane, is located into the
+small-field region.
+\\
+
+\begin{figure}[h!]
+\begin{center}
+  \includegraphics[trim = 0mm 100mm 0mm 10mm, clip, width=7cm, height=6cm]{zoo.pdf}
+	\caption{Classification of the
+potentials in terms of $n_{\rm s}$ and $r$ parameters. }
+\label{fig:parameters}
+\end{center}
+\end{figure}
+
+The classification of inflationary models mentioned previously may be interpreted as an 
+arbitrary one. Although, it is very useful because different types of models cover different 
+regions of the $(n_{\rm s}, r)$ plane without overlaping, see Figure \ref{fig:parameters}.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Testing Inflationary models}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+How can observations constrain $n_{\rm s}$ and $r$ in inflationary models?
+During several years many projects at different scales of the Universe, have been carried 
+out in order to look for observational data to constrain cosmological models. 
+Among many others, they are:  
+Cosmic Background Explorer (COBE), Wilkinson Microwave Anisotropy Probe (WMAP),
+Cosmic Background Imager observations (CBI), Ballon Observations of Millimetric Extra-galactic 
+Radiation and Geophysics (BOOMERang), the Luminous Red Galaxy (LRG) subset DR7 of the Sloan
+Digital Sky Survey (SDSS), Baryon Acoustic Oscillations (BAO), Supernovae (SNe) data, 
+Hubble Space Telescope (HST) and currently the South Pole Telescope (SPT) and the 
+Atacama Cosmology Telescope (ACT).
+Below, we show some predictions coming from different types of inflationary potentials, 
+comparing them with current observational parameters \citep{Mortonson11}.
+We mention some results that have been obtained on the 
+phase space $n_{\rm s}-r$. At this stage, our interest is mainly focussed 
+on the case with no running $dn_{\rm s}/d\ln k =0$.
+ \\
+ 
+
+Figure \ref{fig:Kinney} displays marginalised posterior distributions for $n_{\rm s}$ and $r$ based on
+two different types of data sets: WMAP3 by itself, and WMAP3 plus information from the 
+LRG subset from SDSS. Considering WMAP3 observations alone \citep{Kinney}, 
+the parameters are constrained such that $0.94 < n_{\rm s} < 1.04$
+and $r<0.60$ (95\% CL). Those models which present  $n_{\rm s}<0.9$ are  therefore ruled out at
+high confidence level. The same is applied for models with $n_{\rm s} > 1.05$. 
+%
+WMAP data by itself  cannot lead to a strong constraints because the existence of parameter 
+degeneracies, like the well known geometrical degeneracy involving $\Omega_m$, 
+$\Omega_{\Lambda}$ and $\Omega_k$. However, when it is combined with different types 
+of experiments, together they increase the constraining power and might remove degeneracies. 
+Furthermore, when the SDSS data are included the limit of the gravitational wave amplitude 
+is reduced, whereas the spectral index parameter does not present any relevant change. 
+For WMAP3+SDSS the constraints imposed on $n_{\rm s}$ and $r$ are $0.93<n_{\rm s}<1.01$ and
+$r<0.31$ \citep{Kinney}. 
+
+\begin{figure}[h!]
+\begin{center}
+ \includegraphics[trim = 1mm 10mm -10mm 4mm, clip, width=9cm, height=6.5cm]{rn.pdf}
+\caption{ WMAP3 data sets constraining 
+$n_{\rm s}$ and $r$ parameters. Coloured regions correspond to 68\% and 95\% CL  \citep{Kinney}.}
+\label{fig:Kinney}
+\end{center}
+\end{figure}
+
+On the other hand, Figure \ref{fig:Komatsu} shows that with WMAP5 data alone,   
+$r < 0.43$ (95\% CL) while $0.964< n_{\rm s}<1.008$.
+When BAO and SN data are added, the limit improves significantly to 
+$r < 0.22$ (95\% CL) and $0.953< n_{\rm s}<0.983$.
+ \citep{Komatsu}.
+\\
+
+\begin{figure}[h!]
+\begin{center}
+ \includegraphics[trim = 1mm 10mm -10mm -3mm, clip, width=7cm, height=4cm]{komatsu1.pdf}
+\caption{Constraints on $n_{\rm s}$ and $r$.
+WMAP5 results are coloured blue and WMAP5+BAO+SN red, both on 68\% and 95\% CL \citep{Komatsu}.
+}\label{fig:Komatsu}
+\end{center}
+\end{figure}
+
+Following the same line for inflationary models, we employ the {\sc cosmoMC} package \citep{Lewis}
+which allows us to produce some predictions for the $n_{\rm s}$ and $r$ parameters given 
+a dataset. To illustrate our point, we consider WMAP seven year data. 
+We observe from Figure \ref{fig:infla}, that in order a 
+model to be considered as a favourable candidate 
+it has to predict a small field with spectral index about  $n_{\rm s}=0.982^{+0.020}_{-0.019}$ 
+ and a tensor-to-scalar ratio of $r<0.37$ (95\% CL).
+When WMAP-7 is combined with different datasets, the constraints are tighten as is 
+shown by \citep{Larson}. 
+
+\begin{figure}[h!]
+\begin{center}
+ \includegraphics[trim = 10mm 50mm 20mm 40mm, clip, width=8cm, height=6cm]{infla_wmap7.pdf}
+\caption{Marginalised probability constraints on $n_{\rm s}$ and $r$ using only WMAP7 data. 
+2D constraints are plotted with $1\sigma$ and
+$2\sigma$ confidence contours
+}\label{fig:infla}
+\end{center}
+\end{figure}	
+
+
+ Future observations will reach higher accuracy and therefore strengthen the constraints. 
+ We build a simple toy model from an optimistic Planck-like sensitivity \citep{Planck} using 
+ the best-fit parameters extracted from WMAP7 year as a fiducial values (see Figure \ref{fig:infla_2}). 
+The constraints on $n_{\rm s}$ are highly improved using this idealised experiment: $n_{\rm s}=0.968\pm0.006$
+and $r<0.15$ with 95\% CL.
+
+\begin{figure}[h!]
+ \begin{center}
+ \includegraphics[trim = 1mm 50mm 10mm 40mm, clip, width=6cm, height=4.5cm]{planck.pdf}
+\caption{2D marginalised probability onstraints on $n_{\rm s}$ and $r$ for
+a particular realisation at Planck-like sensitivity. 2D constraints are plotted with $1\sigma$ adn $2\sigma$
+confidence contours.
+}\label{fig:infla_2}
+\end{center}
+\end{figure}	
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{CONSTRAINTS ON INFLATIONARY MODELS}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+WMAP3 results are shown in Figure \ref{fig:Kinney2}. Models with $n_{\rm s}=1$ are in a 
+good agreement with CMB data. In particular the Harrison-Zel'dovich model: $n_{\rm s}=1, 
+r=0, dn_{\rm s}/d \ln k=0$, is not ruled out at more than 95\% CL from CMB data alone.
+Similarly, for inflation driven by a massless self-interacting scalar field
+$V(\phi) = \lambda\phi^4$,  the contours indicate that this potential
+with 60 \textit{e}-folds is still consistent with the WMAP3 data at 95\% CL. 
+\\
+
+\begin{figure}[h!] 
+\centerline{ \epsfxsize=220pt \epsfbox{zoonorun.pdf} }
+\caption{WMAP3 (open contours) and 
+WMAP3+SDSS (filled contours) constraints on phase space $n_{\rm s}$, $r$. Contours with 68\% CL 
+and 95\% are shown with dashed lines \citep{Kinney}.}
+\label{fig:Kinney2}
+\end{figure}
+
+
+On the other hand, WMAP5 results are summarised in Figure \ref{fig:Komatsu2}:
+The model $V(\phi)=\lambda \phi^4$, unlike WMAP3 constraints, is found to be located 
+far away from the 95\% CL, and therefore it is definitely excluded. For inflation produced by a massive 
+scalar field $V(\phi)=(1/2)m^2\phi^2$, the model with $N=50$ is situated outside the 
+68\% CL, whereas with $N=60$ is at the boundary of the 68\% CL. 
+Therefore, this model for the corresponding number of $e$-folds is consistent with data within the 95\% CL. 
+The points represented by $N$-flation describe a model with many massive axion fields \citep{Liddle3}. 
+For an exponential potential, it is observed that models with $p<60$ are mainly excluded.
+Models with $60<p<70$ are roughly in the boundary of the 95\% region, and $p>70$ are 
+in agreement within the 95\% CL. 
+Some models with $p\sim 120$ can be located in or outside the 68\% CL, essentially
+they lay out in the limit. 
+\\
+
+The hybrid potentials, as was already noted, can have different behaviours
+depending on the $(\phi/ \mu)$ value. The parameter space can be split into three 
+different regions based on $(\phi / \mu)$. For $\phi / \mu \ll 1$ the dynamics is similar to small
+fields and the dominant term lays in the region called ``Flat Potential Regime". 
+For $\phi / \mu \gg 1$ the result is similar to large field models, this region is called
+``Chaotic Inflation-like Regime". The boundary, $\phi / \mu \sim 1$ is named 
+``Transition regime". The different $(\phi / \mu)$ values corresponding to their regions
+are shown in Figure \ref{fig:Komatsu2}.
+  
+
+
+\begin{figure}[h!]
+\centerline{ \epsfxsize=190pt \epsfbox{komatsu2.pdf} }
+\caption{Constraints on large and hybrid models obtained from WMAP5+BAO+SN.
+They are shown in contours with 68\% and 95\% CL
+ \citep{Komatsu}.}
+ \label{fig:Komatsu2}
+\end{figure}
+
+Two recent experiments have placed new constraints on the cosmological parameters: the Atacama
+Cosmology Telescope (ACT; \citet{ACT}) and the South Pole Telescope (SPT; \citet{SPT}).
+Figure \ref{fig:SPT} shows the predicted values for a chaotic inflationary model with inflaton
+potential $V(\phi)\propto\phi^p$ with 60 e-folds. We observe that models with $p\ge3$
+are disfavored at more than 95\% CL.
+
+
+\begin{figure}[h!]
+ \includegraphics[trim = 1mm 1mm 1mm 1mm, clip, width=6cm, height=6cm]{ACT}
+  \includegraphics[trim = 1mm 1mm 1mm 1mm, clip, width=6cm, height=6cm]{SPT}
+%\centerline{ \epsfxsize=200pt \epsfbox{ACT} }
+%\centerline{ \epsfxsize=200pt \epsfbox{SPT} }
+\caption{Marginalized 2D probability distribution (68\% and 95\% CL) for the 
+tensor-to-scalar ratio $r$, and the scalar spectral index $n_{\rm s}$ for ACT+WMAP (left panel)
+and SPT+WMAP (right panel)
+ \citep{ACT,SPT}.}
+ \label{fig:SPT}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[h!]\centering
+  \setlength{\tabnotewidth}{1.0\columnwidth}
+  \tablecols{3}
+   \setlength{\tabcolsep}{2.8\tabcolsep}
+\caption{Summarise of the \lowercase{$n_{\rm s}$, $r$} constraints from different measurements \tabnotemark{a}.}
+\label{tab:resul}
+\begin{tabular}{|c|c|c|}
+\toprule
+Parameter & Limits & Data set\\
+\hline
+%& & \\
+$n_{\rm s}$& $ 0.968 \pm {0.006}$ & PLANCK (idealised)\\ 
+$r$ & $< 0.15$ & \\
+\hline
+%& & \\
+$n_{\rm s}$& $ 0.9711 \pm {0.0099}$ & SPT+WMAP7+BAO+$H_0$\\ 
+$r$ & $< 0.17$ & \\
+\hline
+%& & \\
+$n_{\rm s}$& $ 0.970 \pm {0.012}$ & ACT+WMAP7+BAO+$H_0$\\ 
+$r$ & $< 0.19$ & \\
+\hline
+%& & \\
+$n_{\rm s}$& $ 0.973 \pm 0.014$ & WMAP7 + BAO +$H_0$\\ 
+$r$ & $< 0.24$ & \\
+\hline
+%& & \\
+$n_{\rm s}$& $ 0.982 \pm ^{+0.020}_{-0.019}$ & WMAP7 ONLY\\ 
+$r$ & $< 0.36$ & \\
+\hline
+%& & \\
+$n_{\rm s}$& $ 0.968 \pm 0.015$ & WMAP5+BAO+SN\\ 
+$r$ & $< 0.22$ & \\
+\hline
+%& & \\
+$n_{\rm s}$ & $0.986\pm  0.022$ & WMAP5 ONLY  \\
+$r$ & $  < 0.43 $ &  \\
+\hline
+%& & \\
+$n_{\rm s}$& $0.97\pm 0.04 $ & WMAP3 + SDSS\\ 
+$ r$& $<0.31$ & \\
+ \hline
+%& & \\
+$n_{\rm s}$& $0.99 \pm 0.05 $ & WMAP3 ONLY \\
+ $r$& $< 0.60 $ &  \\
+\bottomrule
+\tabnotetext{a}{Peiris et al.2003; Kinney et al.2006; 
+Komatsu et al.2009; Komatsu et al.2011; Dunkley et al. 2010; Keisler et al. 2011}
+\end{tabular}
+%\end{ruledtabular}
+\end{table}
+
+
+Considering the analysis presented here is complicated to prove 
+that a given model is correct, since these could be just particular cases of more general 
+models with several parameters involved. However, it is possible to eliminate models 
+or at least give some constraints on their behaviour leading to a narrower range of study.
+\\
+
+Although we have presented some simple examples of potentials, 
+the classification in small-field, large-field, and hybrid models is enough to 
+cover the entire region of the $n_{\rm s}$--$r$ plane as illustrated in Figure \ref{fig:parameters}.  
+Different versions of the three types of models predict qualitatively different
+scalar and tensor spectra, so it should be particularly easy to work on
+them apart.
+\\
+
+We have seen that, the favoured models are those with small $r$ (for $dn_{\rm s}/d\ln{k}\sim 0$)
+and slightly \textit{red} spectrum, hence models with \textit{blue} power spectrum  $n_s > 1.001$
+are inconsistent with the recently data. This simple but important constraint allows us to rule out
+the simplest models corresponding to hybrid inflation of the form 
+$V(\phi) = \Lambda^4(1 + (\mu / \phi)^{p})$. There still remain models with red spectra in 
+the hybrid classification: inverted models and models with logarithmic potentials. 
+\\
+
+Scale-invariant power spectrum $n_{\rm s} = 1$ is consistent within 95\% CL with WMAP3 data 
+alone, considering no running of the spectral index. The HZ spectrum 
+is therefore not ruled out by WMAP3. However, considering WMAP5 data, 
+Figure \ref{fig:Komatsu2} shows that HZ spectrum lays outside 
+the 95\% CL region, which indicates it is excluded considering the lowest order 
+on the $n_{\rm s}, r$ parameters. When WMAP7 data without tensors is considered, 
+scale-invariant spectrum is totally excluded by more than $3 \sigma$, 
+ however the inclusion of extra parameters weaken the constraint on the spectral index, in which case 
+certain models are still consistent with HZ  even for current observations. 
+When chaotic models $V(\phi)\propto\phi^p$ are analysed with current data, 
+it is found that quartic models 
+($p=4$) are ruled out, whilst models with $p\ge3$ are disfavoured at $>$ 95\% CL.
+Moreover, the quadratic potential $V(\phi)= 1/2 m^2 \phi^2$ is in agreement
+with all data sets presented here and therefore remains as a good candidate.
+Table \ref{tab:resul} summarises the constraints on the $n_{\rm s}$ and $r$ parameters
+and its improvements through the years.
+Future surveys will  provide a more accurate description of the universe and therefore 
+narrow the number of candidates which might better explain the Inflationary period.
+
+
+
+\section{Acknowledgments }
+
+JAV was supported by CONACyT M\'exico.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliography{references}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{thebibliography}
+
+\bibitem[Albrecht \& Steinhardt(1982)]{Steinhardt} Albrecht, A., and {Steinhardt,} P.~J. 1982, \prl, 48,  1220  
+
+\bibitem[Ambrosio(2002)]{Ambrosio02}Ambrosio, M., et~al. 2002, Eur. Phyis. J. C., 25, 511  
+
+\bibitem[Barrow \& Parsons(1995)]{Barrow2}Barrow, J. D., and {Parsons}, P. 1995, Phys. Rev. D, 52, 10 
+  
+\bibitem[Barrow \& Tipler(1986)]{Barrow}Barrow, J.~D., Tipler, F.~J., 1986, The Anthropic Cosmological Principle,
+  Clarendon Press, Oxford, UK 
+
+ \bibitem[Baumann \& Peiris(2009)]{Baumann}Baumann, D., and  {Peiris,} H. V. 2009, Adv. Sci. Lett., 2, 105
+%astro-ph/08103022
+
+\bibitem[Carroll(2001)]{Carrol01}Carroll, S. 2001, Living Rev. Relativity, 3
+   
+\bibitem[Coles \& Lucchin(1995)]{Coles}Coles, P., and Lucchin, F. 1995, Cosmology, WILEY, England, UK 
+
+ \bibitem[Copeland et al.(1994)]{Copeland} Copeland, E. J., et~al. 1994, Phys. Rev. D, 49, 6410
+%astro-ph/93080044
+
+\bibitem[Dodelson (2003)]{Dodelson}Dodelson, S. 2003, Modern Cosmology, Academic Press, Amsterdam, Netherlands 
+
+  \bibitem[Dunkley et al.(2010)]{ACT}Dunkley, J.,  et al. 2010, astro-ph/1009.0866. 
+ 
+\bibitem[Georgi \& Glashow(1974)]{Georgi}Georgi, H., Glashow, S. L. 1974, Phys. Rev. Lett., 32, 438
+ 
+\bibitem[Gold et al.(2011)]{Gold}Gold, B., et al. 2011, ApJS, 192, 15
+
+\bibitem[Guth(1997)]{Guth2}Guth, A.~H. 1997, The Inflationary Universe,  Ed. Vintage
+        
+\bibitem[Guth(1981)]{Guth}Guth, A.~H. 1981, \prd, 23,  347 
+
+\bibitem[Hu \& Dodelson(2002)]{Hu}Hu, W., and {Dodelson,} S. 2002, Annu. Rev. Astron. and Astrophys., 40, 171 
+ 
+\bibitem[Hinshaw et al.(2009)]{wmap5}Hinshaw, G., et~al. 2009, ApJS, 180, 225
+%astro-ph/08030732 
+
+  \bibitem[Keisler et al.(2011)]{SPT}Keisler, R., et al. 2011, astro-ph/1105.3182  
+ 
+\bibitem[Kinney(2004)]{Kinney2}  Kinney, W . H. 2004, CU-TP-1083, astro-ph/0301448
+ 
+\bibitem[Kinney et al.(2006)]{Kinney} Kinney, W. H.,  et~al. 2006, Phys. Rev. D, 74, 023502
+% astro-ph/0605338 
+
+\bibitem[Kinney \& Riotto(1998)]{Kinney3} Kinney, W.~H., and {Riotto}, A.,  1998, Phys. Lett., 435B, 272
+%astro-ph/9802443
+
+\bibitem[Kolb \& Turner(1983)]{Kolb83}Kolb, E. W., Turner, M. S. 1983, Ann Rev Nucl Part Sci. 33, 645
+  
+\bibitem[Kolb \& Turner(1994)]{Kolbbo}Kolb, E. W., Turner, M.S. 1994, The Early Universe, Westview Press  
+
+ \bibitem[Komatsu(2009)]{Komatsu} Komatsu, E., et~al. 2009, ApJS., 180, 330 
+%astro-ph/08030547
+  
+\bibitem[Komatsu et al.(2011)]{Komat}Komatsu, E., et~al. 2011, Astrophys. J. Suppl., 192, 18
+
+  \bibitem[La \& Steinhardt(1999)]{La}La, D., and {Steinhardt}, P.J.  1999, Phys. Rev. D, 59, 064029
+ 
+\bibitem[Larson et al.(2011)]{Larson}Larson, D., et~al. 2011, ApJS., 192, 16
+
+\bibitem[Lewis \& Bridle(2002)]{Lewis}Lewis A., and Bridle, S., 2002, Phys. Rev D, 66, 103511 
+   
+ \bibitem[Liddle(1999)]{Liddle2} Liddle, A. 1999, AIP Conf. Proc., 476, 11
+% astro-ph/9901041
+
+ \bibitem[Liddle(1998)]{Liddle3}Liddle, A.,  {Mazundar,} A., and {Schunck,} F. E. 1998, Phys. Rev. D, 58, 061301  
+%astro-ph/08030547
+
+\bibitem[Liddle(1999)]{Liddle}Liddle, A. 1999, An introduction to Modern Cosmology, WILEY, England, UK
+
+\bibitem[Liddle \& Lyth(2000)]{LiddleLyth} Liddle, A.~R., and  Lyth, D.~H. 2000, Cosmological inflation and large-scale structure,
+  Cambridge University Press, Cambridge, UK 
+
+ \bibitem[Liddle \& Lyth(1992)]{Liddle92}Liddle, A.R. and Lyth, D.H 1992, Phys. Lett. B, 291, 39
+
+ \bibitem[Liddle et al.(1994)]{Liddle94} Liddle, A. R., et~al. 1994, Phys. Rev. D, 50, 12
+%astro-ph/0302225
+  
+\bibitem[Linde(1982)]{Linde}Linde, A.~D. 1982, Phys. Lett. B, 108,  389 
+ 
+ \bibitem[Linde(1983)]{Linde2}Linde, A.~D. 1983, Phys. Lett. B, 129, 177 
+
+\bibitem[Linde(1990)]{Lindeb} Linde, A.~D. 1990, Particle Physics and Inflationary Cosmology, Harwood Academic,
+Switzerland 
+
+ \bibitem[Linde(1991)]{Linde3}Linde, A. D. 1991, Phys. Lett. B,  259, 38
+ 
+\bibitem[Linde(2005)]{Linde05}{Linde,} A. 2005, J.Phys.Conf.Ser., 24 
+ 
+\bibitem[Lidsey(1997)]{Lidsey}  Lidsey, J. E., et al. 1997, Annu. Rev.Mod.Phys., 69,  373  
+ 
+\bibitem[Lyth \& Riotto(1999)]{Lyth}Lyth, D.~H., and {Riotto,} A. 1999, Physics Reports, 314, 1
+
+\bibitem[Mortonson et al.(2011)]{Mortonson11}Mortonson, M. J., Peiris, H.V., and Easther, R. 2011, Phys.Rev. D, 83, 043505 
+  
+ \bibitem[Mukhanov \& Chibisov(1997)]{Mukhanov}Mukhanov, V. F., and {Chibisov,} G. V. 1997, JETP Letters, 33, 532
+  
+\bibitem[Olive(1990)]{Olive} Olive, K. ~A. 1990, Physics Reports, 190, 307  
+
+\bibitem[Peiris et al.(2003)]{Peiris}Peiris, H. V., et~al. 2003, ApJS., 148, 213  
+%astro-ph/0302225
+ 
+   \bibitem[Planck Collaboration(2006)]{Planck}The Planck Collaboration, 2006, astro-ph/0604069. 
+ 
+\bibitem[Riess(2009)]{Riess} Riess, A.~G., et~al. 2009, ApJ., 699, 539 
+% astro-ph/0210007 
+
+\bibitem[Smooth et al.(1992)]{Smooth}Smooth, G. F., et~al. 1992, ApJ Letters, 396, L1 
+  
+\bibitem[Springel et al.(2005)]{Sping} Springel, V., et~al.  2005, Nature, 435, 629  
+
+\bibitem[Tegmark  et al.(2001)]{Teg}Tegmark, M., et~al. 2001, Phys. Rev. D, 63, 043007   
+
+ \bibitem[Vilenkin \& Shellard(2000)]{Vilenkin}Vilenkin, A., Shellard, E. P. S. 2000, Cosmic Strings and Other Topological Defects,
+Cambridge University Press,  Cambridge, UK 
+
+
+
+%astro-ph/1001.4538
+
+\end{thebibliography}
+
+
+\end{document}
