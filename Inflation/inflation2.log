@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.14)  4 DEC 2017 03:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.14)  1 NOV 2017 02:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Inflation.tex
-(./Inflation.tex
+**inflation2.tex
+(./inflation2.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (./rmaa.cls
@@ -374,8 +374,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
-) (./Inflation.aux)
-\openout1 = `Inflation.aux'.
+) (./inflation2.aux)
+\openout1 = `inflation2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
 LaTeX Font Info:    ... okay on input line 130.
@@ -389,7 +389,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 130.
 LaTeX Font Info:    ... okay on input line 130.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 130.
 LaTeX Font Info:    ... okay on input line 130.
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count129
 \scratchdimen=\dimen132
@@ -451,10 +451,10 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \@indexfile=\write4
-\openout4 = `Inflation.idx'.
+\openout4 = `inflation2.idx'.
 
 
-Writing index file Inflation.idx
+Writing index file inflation2.idx
 [1
 Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -463,92 +463,88 @@ Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 279.
+(amsmath)                 on input line 280.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 285.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 286.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 285.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 286.
  [4]
 <201312_planck.jpg, id=27, 823.075pt x 444.66125pt>
 File: 201312_planck.jpg Graphic file (type jpg)
  <use 201312_planck.jpg>
-Package pdftex.def Info: 201312_planck.jpg used on input line 381.
+Package pdftex.def Info: 201312_planck.jpg used on input line 382.
 (pdftex.def)             Requested size: 210.0pt x 113.45157pt.
-
-
-Package natbib Warning: Citation `Planckck:anon' on page 5 undefined on input l
-ine 389.
 
 [5] [6 <./201312_planck.jpg>] [7]
 <infla1.png, id=39, 966.61125pt x 502.87875pt>
 File: infla1.png Graphic file (type png)
  <use infla1.png>
-Package pdftex.def Info: infla1.png used on input line 505.
+Package pdftex.def Info: infla1.png used on input line 507.
 (pdftex.def)             Requested size: 207.69362pt x 119.5021pt.
 
 <pic2.png, id=41, 696.6025pt x 483.8075pt>
 File: pic2.png Graphic file (type png)
  <use pic2.png>
-Package pdftex.def Info: pic2.png used on input line 506.
+Package pdftex.def Info: pic2.png used on input line 508.
 (pdftex.def)             Requested size: 122.33833pt x 99.57982pt.
  [8 <./infla1.png> <./pic2.png>] <dens_infla.jpg, id=48, 766.865pt x 391.4625pt
 >
 File: dens_infla.jpg Graphic file (type jpg)
 
 <use dens_infla.jpg>
-Package pdftex.def Info: dens_infla.jpg used on input line 571.
+Package pdftex.def Info: dens_infla.jpg used on input line 573.
 (pdftex.def)             Requested size: 200.0pt x 102.09442pt.
- [9] [10 <./dens_infla.jpg>] [11]
+ [9 <./dens_infla.jpg>] [10] [11]
 <Field.pdf, id=63, 236.885pt x 172.645pt>
 File: Field.pdf Graphic file (type pdf)
  <use Field.pdf>
-Package pdftex.def Info: Field.pdf used on input line 769.
+Package pdftex.def Info: Field.pdf used on input line 771.
 (pdftex.def)             Requested size: 180.0pt x 131.19048pt.
- [12] [13 <./Field.pdf>] [14] [15] [16] [17] [18] <zoology.pdf, id=100, 557.081
-25pt x 418.56375pt>
+ [12 <./Field.pdf>]
+[13] [14] [15] [16] [17] [18] <zoology.pdf, id=100, 557.08125pt x 418.56375pt>
 File: zoology.pdf Graphic file (type pdf)
 
 <use zoology.pdf>
-Package pdftex.def Info: zoology.pdf used on input line 1152.
+Package pdftex.def Info: zoology.pdf used on input line 1154.
 (pdftex.def)             Requested size: 284.52658pt x 142.26503pt.
  [19 <./zoology.pdf>]
 <new2.pdf, id=115, 597.50786pt x 845.04686pt>
 File: new2.pdf Graphic file (type pdf)
  <use new2.pdf>
-Package pdftex.def Info: new2.pdf used on input line 1184.
+Package pdftex.def Info: new2.pdf used on input line 1186.
 (pdftex.def)             Requested size: 199.16707pt x 113.80719pt.
  [20 <./new2.pdf>]
 <new1.pdf, id=137, 597.50786pt x 845.04686pt>
 File: new1.pdf Graphic file (type pdf)
  <use new1.pdf>
-Package pdftex.def Info: new1.pdf used on input line 1261.
+Package pdftex.def Info: new1.pdf used on input line 1263.
 (pdftex.def)             Requested size: 199.16707pt x 113.80719pt.
  [21 <./new1.pdf>]
 [22] <Zoo.pdf, id=162, 597.50786pt x 845.04686pt>
 File: Zoo.pdf Graphic file (type pdf)
  <use Zoo.pdf>
-Package pdftex.def Info: Zoo.pdf used on input line 1410.
+Package pdftex.def Info: Zoo.pdf used on input line 1412.
 (pdftex.def)             Requested size: 199.16576pt x 170.7113pt.
  [23 <./Zoo.pdf>] <CMB_ns.pdf, id=239, 361.35pt x 252.945pt>
 File: CMB_ns.pdf Graphic file (type pdf)
  <use CMB_ns.pdf>
-Package pdftex.def Info: CMB_ns.pdf used on input line 1457.
+Package pdftex.def Info: CMB_ns.pdf used on input line 1459.
 (pdftex.def)             Requested size: 162.17807pt x 99.58292pt.
 
 <CMB_ratio.pdf, id=241, 361.35pt x 252.945pt>
 File: CMB_ratio.pdf Graphic file (type pdf)
  <use CMB_ratio.pdf>
-Package pdftex.def Info: CMB_ratio.pdf used on input line 1458.
+Package pdftex.def Info: CMB_ratio.pdf used on input line 1460.
 (pdftex.def)             Requested size: 162.17807pt x 99.58292pt.
  [24]
 <rn.png, id=246, 575.9919pt x 346.896pt>
 File: rn.png Graphic file (type png)
  <use rn.png>
-Package pdftex.def Info: rn.png used on input line 1503.
+Package pdftex.def Info: rn.png used on input line 1505.
 (pdftex.def)             Requested size: 256.07567pt x 184.9509pt.
 
 
@@ -558,13 +554,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <komatsu1.pdf, id=354, 441.5948pt x 431.55856pt>
 File: komatsu1.pdf Graphic file (type pdf)
  <use komatsu1.pdf>
-Package pdftex.def Info: komatsu1.pdf used on input line 1519.
+Package pdftex.def Info: komatsu1.pdf used on input line 1521.
 (pdftex.def)             Requested size: 199.175pt x 113.80792pt.
 
 <infla_wmap7.pdf, id=356, 614.295pt x 794.97pt>
 File: infla_wmap7.pdf Graphic file (type pdf)
  <use infla_wmap7.pdf>
-Package pdftex.def Info: infla_wmap7.pdf used on input line 1540.
+Package pdftex.def Info: infla_wmap7.pdf used on input line 1542.
 (pdftex.def)             Requested size: 227.624pt x 170.71497pt.
 
 
@@ -574,20 +570,20 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <planckres.png, id=377, 421.575pt x 310.15875pt>
 File: planckres.png Graphic file (type png)
  <use planckres.png>
-Package pdftex.def Info: planckres.png used on input line 1552.
+Package pdftex.def Info: planckres.png used on input line 1554.
 (pdftex.def)             Requested size: 199.16928pt x 146.53185pt.
  [27 <./infla_wmap7.pdf> <./planckres.png>] <zoonorun.pdf, id=385, 602.25pt x 4
 01.5pt>
 File: zoonorun.pdf Graphic file (type pdf)
 
 <use zoonorun.pdf>
-Package pdftex.def Info: zoonorun.pdf used on input line 1590.
+Package pdftex.def Info: zoonorun.pdf used on input line 1592.
 (pdftex.def)             Requested size: 220.0pt x 146.66574pt.
  <komatsu2.pdf, id=386, 251.94125pt x 520.94624pt>
 File: komatsu2.pdf Graphic file (type pdf)
 
 <use komatsu2.pdf>
-Package pdftex.def Info: komatsu2.pdf used on input line 1624.
+Package pdftex.def Info: komatsu2.pdf used on input line 1626.
 (pdftex.def)             Requested size: 190.0pt x 392.87085pt.
 
 
@@ -596,16 +592,16 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [28 <./zoonorun.pdf>] <ACT.png, id=396, 513.92pt x 386.44376pt>
 File: ACT.png Graphic file (type png)
  <use ACT.png>
-Package pdftex.def Info: ACT.png used on input line 1639.
+Package pdftex.def Info: ACT.png used on input line 1641.
 (pdftex.def)             Requested size: 170.71742pt x 170.71573pt.
 
 <SPT.png, id=398, 459.7175pt x 392.46625pt>
 File: SPT.png Graphic file (type png)
  <use SPT.png>
-Package pdftex.def Info: SPT.png used on input line 1640.
+Package pdftex.def Info: SPT.png used on input line 1642.
 (pdftex.def)             Requested size: 170.71695pt x 170.7189pt.
 
-Overfull \hbox (7.345pt too wide) in paragraph at lines 1639--1646
+Overfull \hbox (7.345pt too wide) in paragraph at lines 1641--1648
 [][] [] 
  []
 
@@ -616,46 +612,46 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [29 <./komatsu2.pdf>] [30 <./ACT.png> <./SPT.png>] [31] [32]
-Class rmaa Info: Calling @outputaddressesifnecessary on input line 1904.
+Class rmaa Info: Calling @outputaddressesifnecessary on input line 1893.
+ [33]
+(./inflation2.aux)
 
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package natbib Warning: There were undefined citations.
-
-[33] (./Inflation.aux) ) 
+ ) 
 Here is how much of TeX's memory you used:
- 4790 strings out of 493029
- 65632 string characters out of 6136234
- 153566 words of memory out of 5000000
- 8210 multiletter control sequences out of 15000+600000
+ 4755 strings out of 493029
+ 64963 string characters out of 6136234
+ 152310 words of memory out of 5000000
+ 8175 multiletter control sequences out of 15000+600000
  12356 words of font info for 43 fonts, out of 8000000 for 9000
  1153 hyphenation exceptions out of 8191
- 38i,14n,27p,735b,554s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmti9.pfb>
-Output written on Inflation.pdf (33 pages, 1421855 bytes).
+ 38i,14n,27p,753b,522s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mti9.pfb>
+Output written on inflation2.pdf (33 pages, 1398172 bytes).
 PDF statistics:
- 501 PDF objects out of 1000 (max. 8388607)
- 329 compressed objects within 4 object streams
+ 497 PDF objects out of 1000 (max. 8388607)
+ 326 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  174 words of extra memory for PDF output out of 10000 (max. 10000000)
 
