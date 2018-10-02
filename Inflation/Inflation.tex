@@ -172,7 +172,7 @@ technical details have been omitted or oversimplified;
 we encourage the reader to check out the vast amount of literature about the inflationary theory
  \citep{Lindeb, Kolbbo,  Liddle, LiddleLyth, Dodelson}.
  
-Before starting with the theoretical description, let us consider some assumptions the
+Before starting with the theoretical description, let us consider some assumptions about the
 SBB model is built on \citep{Coles}:
 \\ 
 
@@ -239,12 +239,12 @@ and the energy conservation described by the {\bf fluid equation}
 \noindent
 where overdots indicate time derivative, and $H$ defines the \textit{Hubble parameter}. 
 Notice that we could get the acceleration equation by time-deriving (\ref{eq:Friedmann}) 
-and using (\ref{eq:fluid}), therefore only two them are independent equations.  
+and using (\ref{eq:fluid}), therefore only two of them are independent equations.  
 Table \ref{tab:components} displays the solutions for the Friedmann and fluid equations with 
 different components of the Universe.
  \\
 
-From Eqn.~(\ref{eq:Friedmann}) that for a particular 
+From Eqn.~(\ref{eq:Friedmann}) it can be seen that for a particular 
 Hubble parameter there exists an energy density for which the universe may be spatially flat 
 $(k=0)$. This is known as the {\it critical density} $\rho_c$ and is given by
 %
@@ -257,7 +257,7 @@ where $\rho_c$ is a function of time due to the presence of $H$.
 In particular, its current  
 value is denoted by $\rho_{c,0}=1.87840\, h^2\, \times 10^{-26}$ kg m$^{-3}$, 
 or in terms of more  convenient units taking into account large scales in the 
-Universe,   $\rho_{c,0}= 2.775 \, h^{-1}\, \times 10^{11} M_{\odot} /(h^{-1} {\rm Mpc})^3 $ \citep{Planckck};
+Universe,   $\rho_{c,0}= 2.775 \, h^{-1}\, \times 10^{11} M_{\odot} /(h^{-1} {\rm Mpc})^3 $ \citep{Planckck}\textcolor{red}{actualizar esta cita};
 with the solar mass denoted by $M_{\odot}=1.988\times 10^{33}$g and $h$ 
 parameterises the present value of the Hubble parameter
 
@@ -336,7 +336,7 @@ that is, the present Universe is nearly flat.
 %\textbf{\large Shortcomings}
 %\end{center}
 Once the equations that describe the Universe are known, then we need to incorporate the
-components of the cosmos, i.e. baryonic matter, radiation, dark matter. 
+components of the cosmos, i.e. baryonic matter, radiation, dark matter and dark energy. 
 %are enough to describes all the observations that we can see at this moment. 
 %Nevertheless, there exist several ``problems" the standard old cosmology is not
 %able to provide an explanation, and therefore 
@@ -751,7 +751,7 @@ primes as derivatives with respect to the scalar field $\phi_0$.
   equation (\ref{eq:Acce}) becomes, 
  
  \beq
- {\ddot a \over a} = -{8\pi \over m_{Pl}^2}\left(\dot \phi_0^2-V(\phi_0) \right).
+ {\ddot a \over a} = -{8\pi \over 3m_{Pl}^2}\left(\dot \phi_0^2-V(\phi_0) \right).
  \eeq
  
  \noindent
@@ -1124,7 +1124,7 @@ Then the spectral indices $n_{\rm s}$ and $n_{T}$ can be expressed
  in terms of the slow-roll parameters $\epsilon_{\rm v}$ and $\eta_{\rm v}$, to lowest order, as:
 
 \bea \label{indices}
-n_{\rm s} - 1  &\simeq&  - 4~ \epsilon_{\rm v}(\phi) + 2~ \eta_{\rm v}(\phi), \nonumber \\
+n_{\rm s} - 1  &\simeq&  - 6~ \epsilon_{\rm v}(\phi) + 2~ \eta_{\rm v}(\phi), \nonumber \\
 n_T  &\simeq&  -2~ \epsilon_{\rm v}(\phi). 
 \eea
 
@@ -1153,17 +1153,17 @@ probe or at least constrain the inflationary models and therefore the shape of t
 
 Let us get back to the massive scalar field example in equation  (\ref{eq:mass}).
 %
-Inflation ends up when the condition $\epsilon_{\rm v}=1$ is achieved, so $\phi_{end}\simeq m_{pl}/\sqrt{4 \pi}$.
+Inflation ends up when the condition $\epsilon_{\rm v}=1$ is achieved, so $\phi_{end}\simeq m_{pl}/\sqrt{2 \pi}$.
  As we pointed out before, we are interested in models with an $e$-fold number of about $N_{tot}=60$, that is
  \beq
  \phi_i=\phi_{60}\simeq \sqrt{\frac{30}{\pi}}m_{pl}.
  \eeq
  
  \noindent
- Finally, the spectral index and the tensor-to-scalar ratio for this potential are \jav{checar numero}
+ Finally, the spectral index and the tensor-to-scalar ratio for this potential are
  
  \beq
- n_{\rm s}-1= -\frac{m_{pl}^2}{\pi \phi_{60}^2}, \qquad r= \frac{4m_{pl}^2}{\pi \phi_{60}^2}.
+ n_{\rm s}-1= -\frac{1}{30}, \qquad r= \frac{2}{15}.
  \eeq
 
 \noindent
@@ -1267,7 +1267,7 @@ V\left(\phi\right) = \Lambda^4 \left({\phi \over \mu}\right)^p,
 \end{equation}
 where it is enough to choose the exponent $p>1$ in order to specify a particular model.
 %
-This model gives \jav{checar numeros}
+This model gives 
 %\begin{eqnarray}
 %n_{\rm s}-1&=&-\frac{4+2p}{4N+p}\, ,\nonumber\\
 %r&=&\frac{4\pi p}{4N+p}.
@@ -1301,7 +1301,6 @@ V\left(\phi\right) = \Lambda^4 \exp\left(\phi / \mu\right).
  This type of potential is a rare case presented in inflation because its 
  dynamics has an exact solution given by a power-law expansion.
  For this case the spectral index $n_{\rm s}$ is closely related to the tensor-to-scalar ratio $r$, as 
-\jav{checar numeros}
 %\begin{eqnarray}
 %n_{\rm s}-1&=&-\frac{m^2_{pl}}{8\pi \mu^2}, \nonumber \\
 %r &=& 2\pi \left(1 - n_{\rm s}\right),
@@ -1345,15 +1344,16 @@ V\left(\phi\right) = \Lambda^4 \left[1 - \left(\phi / \mu\right)^p\right],
 where the exponent $p$ differs from model to model. $V(\phi)$ is usualy considered as the 
 lowest-order in a Taylor expansion from a more general potential.
 In the simplest case of spontaneous symmetry breaking with no special symmetries, 
-the dominant term is the mass term, $p = 2$, hence the model gives \jav{checar numeros}
+the dominant term is the mass term, $p = 2$, hence the model gives
 
 %\bea
 %n_{\rm s}-1&\simeq& -4\left( \frac{m_{\rm Pl}}{\mu}\right)^2, \nonumber \\
 %r &=& 2\pi (1 - n_{\rm s}) \exp\left[- 1 - N\left(1 - n_s\right)\right].
 %\eea
 \bea
-n_{\rm s}-1&\simeq& -4\left( \frac{m_{\rm Pl}}{\mu}\right)^2, \nonumber \\
-r &=& 8 (1 - n_{\rm s}) \exp\left[- 1 - N\left(1 - n_s\right)\right].
+n_{\rm s}-1&\simeq& -\left( \frac{m_{\rm Pl}}{\mu}\right)^2, \nonumber \\
+&&\textcolor{red}{N  = \frac{4\pi\mu^2}{m_{pl}^2}\left[\ln\left(\frac{\phi_{end}}{\phi_i}\right)-\frac{\phi_{end}-\phi_i}{2\mu^2}\right]}\nonumber\\
+r &=& 8 (1 - n_{\rm s}) \exp\left[- 1 - N\left(1 - n_s\right)\right].\\
 \eea
 
 %
@@ -1363,17 +1363,19 @@ hand, $p > 2$ has a very different behavior. The scalar spectral index is
 \begin{equation}
 n_{\rm s}-1 = - {2 \over N} \left({p - 1 \over p - 2}\right),
 \end{equation}
-independent of $(m_{\rm Pl}/\mu)$. In addition, when $\mu < m_{\rm Pl}$ 
-the values of $r$ are restricted by
+independent of $(m_{\rm Pl}/\mu)$. In addition, the tensor-to-scalar ratio for this model is given by 
+%the values of $r$ are restricted by
 %\begin{equation}
 %r < 2\pi {p \over N \left(p - 2\right)} \left[{8 \pi \over N p \left(p -
 %2\right)}\right]^{p / \left(p - 2\right)}.
 %\end{equation}
+%\begin{equation}
+%r < 8 {p \over N \left(p - 2\right)} \left[{8 \pi \over N p \left(p -
+%2\right)}\right]^{p / \left(p - 2\right)}.
+%\end{equation}
 \begin{equation}
-r < 8 {p \over N \left(p - 2\right)} \left[{8 \pi \over N p \left(p -
-2\right)}\right]^{p / \left(p - 2\right)}.
+ r = 8\left(\frac{\mu}{M_{pl}}\right)^{2p/(p-2)}\left(\frac{p}{2N(p-2)}\right)^{2(p-1)/(p-2)}
 \end{equation}
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1414,7 +1416,14 @@ For $\phi \gg \phi_c$, $N(\phi)$ approaches the value
 N_{max}\equiv \left( {p+1 \over p+2} \right) {1 \over \eta (\phi_c)},
 \eeq
 %
-and therefore, the spectral index is given by \jav{checar numeros}
+\textcolor{red}{(Yo obtuve)}
+ \beq
+ N = \frac{8\pi\mu^p}{pm_{pl}^2}\left[\frac{\phi_{end}^{2-p}-\phi_i^{2-p}}{2-p}+\frac{\phi_{end}^2-\phi_i^2}{2\mu^p}\right], \ \ \ \text{para $p\neq 2$}\\
+ \eeq
+ \beq
+ N = \frac{8\pi\mu^p}{pm_{pl}^2}\left[\ln\left(\frac{\phi_{end}}{\phi_i}\right)+\frac{\phi_{end}^2-\phi_i^2}{2\mu^p}\right], \ \ \ \text{para $p= 2$}
+ \eeq
+and therefore, the spectral index is given by \jav{ya vi que s\'i es esto, compar\'andolo con el resultado de Lidle}
  $$
 n_{\rm s}-1 \simeq 2 \left( \frac{p+1}{p+2}\right) \frac{1}{N_{max}-N}.
  $$
@@ -1440,12 +1449,12 @@ a running of the spectral index
 
 Linear models, $V\left(\phi\right) \propto \phi$, are located on the limits between
 large field and small field models. They are represented by $V''\left(\phi\right) = 0$ and $\eta =
-- \epsilon$. The spectral index and tensor-to-scalar ratio are given by \jav{checar numeros}
+- \epsilon$  \textcolor{red}{Duda: C\'omo puede ser esto si $\eta$ es lineal en $V''$ y se est\'a pidiendo que $V''=0$?}. The spectral index and tensor-to-scalar ratio are given by \jav{checar numeros}
 
 \beq
-n_{\rm s}-1=-{6\over 4N+1},\qquad
+n_{\rm s}-1=-{6\over 1-4N},\qquad
 %r = {4\pi \over 4N+1} .
-r = {16 \over 4N+1} .
+r = {16 \over 1-4N} .
 \eeq
 
 \subsection{Logarithmic inflation}
@@ -1464,13 +1473,17 @@ Typically they correspond to loop corrections in a supersymmetric theory,
 where $C$ denotes the degrees of freedom coupled
 to the inflaton and $g$ is a coupling constant.  
 %
-For this potential, the inflationary parameters are \jav{checar numeros}
+For this potential, the inflationary parameters are \textcolor{red}{Me bas\'e en la p\'agina 459 de Liddle. Nota: saqu\'e el r y me dio eso, pero de todos modos hay que asegurarse de que sea eso.}
+%
+%\bea
+%n_{\rm s}-1&\simeq& -\frac{1}{N}\left(1+\frac{3C g^2}{16 \pi^2}\right), \nonumber \\
+%r&\simeq& \frac{1}{N}{Cg^2\over 4\pi}.
+% \eea
 %
 \bea
-n_{\rm s}-1&\simeq& -\frac{1}{N}\left(1+\frac{3C g^2}{16 \pi^2}\right), \nonumber \\
-r&\simeq& \frac{1}{N}{Cg^2\over 4\pi}.
- \eea
-%
+n_{\rm s}-1&\simeq&-\frac{1}{N}, \nonumber \\
+r&\simeq& \sqrt{\frac{1}{N}{Cg^2\over 16\pi}}.
+\eea
 In this model, to end up inflation, an auxiliary field is needed, which is the main feature of
 hybrid models. However when it is plotted on the $n_{\rm s}$---$r$ plane, is located into the
 small-field region.
@@ -1490,12 +1503,10 @@ potentials in terms of $n_{\rm s}$ and $r$ parameters. }
 
 Hybrid Natural Inflation is particularly appealing because its origins lie in well motivated physics.
 The inflaton potential relevant to the inflationary era has the general form
-
 \begin{equation}
 V(\phi)=\Delta^4(1+a\cos(\frac{\phi}{ f})),
 \label{pot1}
 \end{equation}
-
 where $f$ is the symmetry breaking scale and 
 $a$ allows for more general inflationary phenomena that can readily accommodate the Planck results, and even allow for a low-scale
 of inflation. Here the inflaton, $\phi$, is a pseudo-Goldstone boson associated with a spontaneously broken global symmetry
@@ -1535,7 +1546,7 @@ As an example, let us consider two scalar fields with  a potential like
 V=V_o\left[\left(1-\frac{\psi}{v^2}\right)^2+\frac{\phi^2}{\mu^2}+\frac{\phi^2\psi^2}{\omega^4}\right],
 \end{equation}
 %
-with $v, w, \omega$ constant values. \jav{revisar}
+with $v, \mu, \omega$ constant values.
 In the typical hybrid models, it is expected that the \textit{waterfall} field $\psi$ remains in $\psi=0$ 
 whilst the inflaton field $\phi$ evolves generating inflation. 
 Then, for a critical value $\phi_c$ the minimum $\psi=0$ becomes unstable and the waterfall 
