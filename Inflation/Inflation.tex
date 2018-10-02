@@ -257,7 +257,7 @@ where $\rho_c$ is a function of time due to the presence of $H$.
 In particular, its current  
 value is denoted by $\rho_{c,0}=1.87840\, h^2\, \times 10^{-26}$ kg m$^{-3}$, 
 or in terms of more  convenient units taking into account large scales in the 
-Universe,   $\rho_{c,0}= 2.775 \, h^{-1}\, \times 10^{11} M_{\odot} /(h^{-1} {\rm Mpc})^3 $ \citep{Planckck}\textcolor{red}{actualizar esta cita};
+Universe,   $\rho_{c,0}= 2.775 \, h^{-1}\, \times 10^{11} M_{\odot} /(h^{-1} {\rm Mpc})^3 $ \citep{Planckck};
 with the solar mass denoted by $M_{\odot}=1.988\times 10^{33}$g and $h$ 
 parameterises the present value of the Hubble parameter
 
@@ -1352,7 +1352,7 @@ the dominant term is the mass term, $p = 2$, hence the model gives
 %\eea
 \bea
 n_{\rm s}-1&\simeq& -\left( \frac{m_{\rm Pl}}{\mu}\right)^2, \nonumber \\
-&&\textcolor{red}{N  = \frac{4\pi\mu^2}{m_{pl}^2}\left[\ln\left(\frac{\phi_{end}}{\phi_i}\right)-\frac{\phi_{end}-\phi_i}{2\mu^2}\right]}\nonumber\\
+N  &=& \frac{4\pi\mu^2}{m_{pl}^2}\left[\ln\left(\frac{\phi_{end}}{\phi_i}\right)-\frac{\phi_{end}-\phi_i}{2\mu^2}\right]\nonumber\\
 r &=& 8 (1 - n_{\rm s}) \exp\left[- 1 - N\left(1 - n_s\right)\right].\\
 \eea
 
@@ -1410,20 +1410,23 @@ Because the presence of an auxiliary field the number of {\it e}-folds is
 N(\phi)\simeq \left( {p+1 \over p+2} \right)\left[ {1 \over \eta(\phi_c) }- {1 \over \eta(\phi)}\right]. 
 \eeq
 %
+
+\noindent
 For $\phi \gg \phi_c$, $N(\phi)$ approaches the value
 %
 \beq
-N_{max}\equiv \left( {p+1 \over p+2} \right) {1 \over \eta (\phi_c)},
+N_{max}\equiv \left( {p+1 \over p+2} \right) {1 \over \eta (\phi_c)}.
 \eeq
 %
-\textcolor{red}{(Yo obtuve)}
+In general %\textcolor{red}{(Yo obtuve)}
  \beq
- N = \frac{8\pi\mu^p}{pm_{pl}^2}\left[\frac{\phi_{end}^{2-p}-\phi_i^{2-p}}{2-p}+\frac{\phi_{end}^2-\phi_i^2}{2\mu^p}\right], \ \ \ \text{para $p\neq 2$}\\
+ N = \frac{8\pi\mu^p}{pm_{pl}^2}\left[\frac{\phi_{end}^{2-p}-\phi_i^{2-p}}{2-p}+\frac{\phi_{end}^2-\phi_i^2}{2\mu^p}\right], \ \ \ \text{for $p\neq 2$}\\
  \eeq
  \beq
- N = \frac{8\pi\mu^p}{pm_{pl}^2}\left[\ln\left(\frac{\phi_{end}}{\phi_i}\right)+\frac{\phi_{end}^2-\phi_i^2}{2\mu^p}\right], \ \ \ \text{para $p= 2$}
+ N = \frac{8\pi\mu^p}{pm_{pl}^2}\left[\ln\left(\frac{\phi_{end}}{\phi_i}\right)+\frac{\phi_{end}^2-\phi_i^2}{2\mu^p}\right], \ \ \ \text{for $p= 2$}
  \eeq
-and therefore, the spectral index is given by \jav{ya vi que s\'i es esto, compar\'andolo con el resultado de Lidle}
+ 
+and therefore, the spectral index is given by %\jav{ya vi que s\'i es esto, compar\'andolo con el resultado de Lidle}
  $$
 n_{\rm s}-1 \simeq 2 \left( \frac{p+1}{p+2}\right) \frac{1}{N_{max}-N}.
  $$
@@ -1441,6 +1444,7 @@ a running of the spectral index
  This parameter  will be very useful for higher orders and more accurate constraints in 
  future observations. For instance, the particular case $p = 2$ 
  and $n_{\rm s} = 1.2$, the running obtained is $dn_{\rm s} / d\ln{k} = -0.05$ \citep{Kinney3}. 
+\\
 
 %%%%%%%%%%%%%%%%%%%%
 \subsection{Linear models: $\eta = - \epsilon$}
@@ -1449,7 +1453,9 @@ a running of the spectral index
 
 Linear models, $V\left(\phi\right) \propto \phi$, are located on the limits between
 large field and small field models. They are represented by $V''\left(\phi\right) = 0$ and $\eta =
-- \epsilon$  \textcolor{red}{Duda: C\'omo puede ser esto si $\eta$ es lineal en $V''$ y se est\'a pidiendo que $V''=0$?}. The spectral index and tensor-to-scalar ratio are given by \jav{checar numeros}
+- \epsilon$. 
+%\textcolor{red}{Duda: C\'omo puede ser esto si $\eta$ es lineal en $V''$ y se est\'a pidiendo que $V''=0$?}. 
+The spectral index and tensor-to-scalar ratio are given by \jav{checar numeros}
 
 \beq
 n_{\rm s}-1=-{6\over 1-4N},\qquad
@@ -1473,7 +1479,8 @@ Typically they correspond to loop corrections in a supersymmetric theory,
 where $C$ denotes the degrees of freedom coupled
 to the inflaton and $g$ is a coupling constant.  
 %
-For this potential, the inflationary parameters are \textcolor{red}{Me bas\'e en la p\'agina 459 de Liddle. Nota: saqu\'e el r y me dio eso, pero de todos modos hay que asegurarse de que sea eso.}
+For this potential, the inflationary parameters are 
+%\textcolor{red}{Me bas\'e en la p\'agina 459 de Liddle. Nota: saqu\'e el r y me dio eso, pero de todos modos hay que asegurarse de que sea eso.}
 %
 %\bea
 %n_{\rm s}-1&\simeq& -\frac{1}{N}\left(1+\frac{3C g^2}{16 \pi^2}\right), \nonumber \\
@@ -1499,7 +1506,7 @@ potentials in terms of $n_{\rm s}$ and $r$ parameters. }
 \end{figure}
 
 
-\subsection{Hybrid Natural Inflation \jav{tal vez}}
+\subsection{Hybrid Natural Inflation}
 
 Hybrid Natural Inflation is particularly appealing because its origins lie in well motivated physics.
 The inflaton potential relevant to the inflationary era has the general form
