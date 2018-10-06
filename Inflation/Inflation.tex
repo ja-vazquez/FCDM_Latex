@@ -676,7 +676,9 @@ Throughout the literature there exists a broad diversity of models that have bee
 \citep{LiddleLyth, Olive, Lyth}. In this section we present the scalar fields as good candidates 
 to drive inflation and explain how relate theoretical predictions to observable quantities. 
 Here, we limit ourselves to models based on general gravity, i.e. derived from the
-Einstein-Hilbert action, and single-field models described by a homogeneous slow-roll scalar field $\phi$. \textcolor{red}{In the next section we introduce the posibility that several scalar fields can contribute to the inflationary process.}
+Einstein-Hilbert action, and single-field models described by a homogeneous slow-roll scalar field $\phi$. 
+Nevertheless, in section \ref{sec:multi} we provide a very brief introduction to several scalar fields, as a possibility
+to generate the inflationary process.
 \\
 
 Inflation relies on the existence of an early epoch in the Universe dominated by a very 
@@ -1181,73 +1183,109 @@ observational data to constrain an a priori parameterisation, and others
 attempting a direct reconstruction from data \citep{Hlozek, Vazquez1, Vazquez2, Guo, Vazquez3}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Multi-field inflation}
+\section{Multi-field inflation}\label{sec:multi}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Assuming that a single scalar field is responsible for inflation might be only an approximation as the presence of multiple fields could drive this process. In this section we analize how all what we have already seen is modified when several scalar fields are considered for the inflationary mechanism. For simplicity we show following \textcolor{red}{Referencia[Christian T. Byrnes, David Wands;  Phys.Rev. D74 (2006) 043529; DOI:  	10.1103/PhysRevD.74.043529;  arXiv:astro-ph/0605679v3]} the modifications obtained when two scalar fields are responsible of driving inflation. The generalization to more than 2 fields can be easily obtained and can be found in the reference \textcolor{red}{referencia[https://arxiv.org/pdf/1606.06971.pdf]}. 
+Assuming that a single scalar field is responsible for inflation might be only an approximation, 
+as the presence of multiple fields could drive this process too. 
+In this section we show how the cosmological equations are modified when two scalar fields are responsible for driving inflation. 
+%analyze how all what we have already seen is modified when several scalar fields are considered for the inflationary mechanism. 
+%For simplicity we follow
+ \textcolor{red}{[Christian T. Byrnes, David Wands;  Phys.Rev. D74 (2006) 043529; 
+ DOI:  	10.1103/PhysRevD.74.043529;  arXiv:astro-ph/0605679v3]} 
+ %the modifications obtained when two scalar fields are responsible of driving inflation. 
+ The generalization to more than two fields can be easily obtained and described by
+  \textcolor{red}{[https://arxiv.org/pdf/1606.06971.pdf]}. 
 
 \subsection{Background equation of motion}
 
-We consider a 2-field inflationary model with canonical kinetic terms and where its dynamics is described by an arbitrary interaction potential $V(\phi\psi)$. As usual we consider that the classical fields are homogeneous and evolve in a FLRW background. Then, the background equation of motion for each scalar field and the Hubble parameter are
+We consider a two-field inflationary model with canonical kinetic terms and its dynamics  being
+described by an arbitrary interaction potential $V(\phi, \psi)$. 
+As usual we assume the classical fields are homogeneous and evolve in a FLRW background. 
+Thus, the background equation of motion for each scalar field and the Hubble parameter are
+
 \begin{subequations}
 \begin{equation}\label{KGEq}
-\ddot{\phi}_i+3H\dot{\phi_i}+\frac{dV_i}{d|\phi_i|^2}\phi_i=0 \ \ \ (i=\phi,\psi)
+\ddot{\phi}_i+3H\dot{\phi_i}+\frac{dV_i}{d|\phi_i|^2}\phi_i=0, \quad (i=\phi,\psi),
 \end{equation}
+
 \begin{equation}
-H^2=\frac{8\pi G}{3}\left[V+\frac{1}{2}\left(\dot\phi^2+\dot\psi^2\right)\right],
+H^2=\frac{8\pi}{3m_{Pl}^2}\left[V+\frac{1}{2}\left(\dot\phi^2+\dot\psi^2\right)\right],
 \end{equation}
 \end{subequations}
-where $V_i\equiv\partial V/\partial \phi_i$. In the inflationary era we need to assume that the scalar fields are slow-rolling. This happens always that the condition $\epsilon_i,|\eta_{ij}|\ll 1$ is fulfill; $\epsilon_i$ and $\eta_{ij}$ are now a new set of slow-roll parameters and are defined as
+where $V_i\equiv\partial V/\partial \phi_i$. During inflation we adopt the slow-roll approximation for each field. 
+This occurs always that the condition $\epsilon_i,|\eta_{ij}|\ll 1$ is fulfilled; $\epsilon_i$ and $\eta_{ij}$ are now 
+a new set of slow-roll parameters, defined as \jav{cambie la G por masas de planck, pero revisar que el texto
+de abajo sea consistente}
+
 \begin{equation}\label{slowroll2f}
-\epsilon_i = \frac{1}{16 \pi G}\left(\frac{V_i}{V}\right)^2, \ \ \ \ \ \ \ \ 
-\eta_{ij}=\frac{1}{8\pi G}\left(\frac{V_{ij}}{V}\right)
+\epsilon_i = \frac{m_{Pl}^2}{16 \pi }\left(\frac{V_i}{V}\right)^2, \ \ \ \ \ \ \ \ 
+\eta_{ij}=\frac{m_{Pl}^2}{8\pi G}\left(\frac{V_{ij}}{V}\right).
 \end{equation}
-If this happens we can rewrite the above equations as
+Then the above equations are written as
+
 \begin{equation}
 \dot{\phi}_i\simeq -\frac{V_i}{3H}\left(1+\frac{1}{3}\delta_i^H\right), \ \ \ \ \ \ \ \ \
-H^2\simeq \frac{8\pi G}{3}V\left(1+\frac{1}{3}\epsilon^H\right)
+H^2\simeq \frac{8\pi }{3m_{Pl}^2}V\left(1+\frac{1}{3}\epsilon^H\right)
 \end{equation}
-where $\delta_i^H$ and $\epsilon^H$ are new slow-roll parameters defined as
-\begin{equation}
-\delta_i^H = -\frac{\ddot\phi_i}{H\dot\phi_i}, \ \ \ \ \ \ \ \ \epsilon^H = \epsilon_{\phi\phi}+\epsilon_{\psi\psi}
-\end{equation} 
-\subsection{Cosmological perturbations: The adiabatic and isocurvature perturbations}
+with $\delta_i^H$ and $\epsilon^H$ the new slow-roll parameters:
 
-The equation of motion for the perturbed fields in the spatially flat gauge are
 \begin{equation}
-\ddot{\delta\phi}_i+3H\dot{\delta\phi}_i+\sum_j\left[V_{ij}-\frac{8\pi G}{a^3}\frac{d}{dt}\left(\frac{a^3}{H}\dot{\phi}_i \dot\phi_j\right)\right]\delta\phi_j=0
+\delta_i^H = -\frac{\ddot\phi_i}{H\dot\phi_i}, \ \ \ \ \ \ \ \ \epsilon^H = \epsilon_{\phi\phi}+\epsilon_{\psi\psi}.
+\end{equation} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Cosmological perturbations: The adiabatic and isocurvature perturbations}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The equation of motion for the perturbed fields, in the spatially flat gauge, is described by
+
+\begin{equation}
+\ddot{\delta\phi}_i+3H\dot{\delta\phi}_i+\sum_j\left[V_{ij}-\frac{8\pi}{a^3m_{Pl}^2}\frac{d}{dt}\left(\frac{a^3}{H}\dot{\phi}_i \dot\phi_j\right)\right]\delta\phi_j=0.
 \end{equation}
-For the large scales ($k\ll aH$) it is better to work in a rotating basis of the fields given by
+
+\noindent
+On the largest scales ($k\ll aH$) it is better to work on a rotating basis of the fields given by
   \begin{subequations}
   \begin{equation}
-  \binom{\delta \sigma}{\delta s}=S^{\dagger}\binom{\delta \phi}{\delta\psi}
+  \binom{\delta \sigma}{\delta s}=S^{\dagger}\binom{\delta \phi}{\delta\psi},
   \end{equation}
-  where
+  
+  with
   \begin{equation}\label{angle}
-  S=\begin{pmatrix}\cos\theta & -\sin\theta\\ \sin\theta & \cos\theta\end{pmatrix}, \ \ \ \tan\theta =\frac{\dot \psi}{\dot \phi}\simeq\pm \sqrt{\frac{\epsilon_\psi}{\epsilon_\phi}}
+  S=\begin{pmatrix}\cos\theta & -\sin\theta\\ \sin\theta & \cos\theta\end{pmatrix}, \ \ \ \tan\theta =\frac{\dot \psi}{\dot \phi}\simeq\pm \sqrt{\frac{\epsilon_\psi}{\epsilon_\phi}}.
   \end{equation} 
   \end{subequations}
-The field $\sigma$ is parallel to the trajectory in field space and is usually called \textit{adiabatic field} while the field  $s$ is perpendicular to it and is called \textit{entropy field}. 
+  
+The field $\sigma$ is parallel to the trajectory of the field space and usually called 
+\textit{adiabatic field}, whereas the field  $s$ is perpendicular and named it the \textit{entropy field}. 
+If the background trajectory is curved then $\delta\sigma$ and $\delta s$ are correlated at Hubble exit,
+and therefore at this point  the power spectrum and cross-correlation are given by
 
-If the background trajectory is curved it happens that $\delta\sigma$ and $\delta s$ are correlated at Hubble exit. In this way the power spectrum and cross-correlation at this point is given by
 \begin{subequations}
 \begin{equation}
-P_{\sigma^*}((k))\simeq\left(\frac{H_*}{2\pi}\right)^2(1+(-2+6C)\epsilon-2C\eta_{\sigma\sigma})
+P_{\sigma^*}(k)\simeq\left(\frac{H_*}{2\pi}\right)^2(1+(-2+6C)\epsilon-2C\eta_{\sigma\sigma}),
 \end{equation}
 \begin{equation}
-C_{\sigma s^*}(k)\simeq-2C\eta_{\sigma s}\left(\frac{H_*}{2\pi}\right)^2
+C_{\sigma s^*}(k)\simeq-2C\eta_{\sigma s}\left(\frac{H_*}{2\pi}\right)^2,
 \end{equation}
 \begin{equation}\label{5c}
-P_{s^*}(k)\simeq\left(\frac{H_*}{2\pi}\right)^2(1+(-2+2C)\epsilon-2C\eta_{ss})
+P_{s^*}(k)\simeq\left(\frac{H_*}{2\pi}\right)^2(1+(-2+2C)\epsilon-2C\eta_{ss}),
 \end{equation}
 \end{subequations}
-where $C\simeq 0.7296$ and $\epsilon\equiv \epsilon_{\sigma\sigma}+\epsilon_{\eta\eta}$ and $\eta_{ij}$ ($i,j=\sigma,s$) are new slow-roll parameters defined in a similar way than Eq. \eqref{slowroll2f} but in terms of he new fields $\sigma$ and $s$.
+where $C\simeq 0.7296$ and $\epsilon\equiv \epsilon_{\sigma\sigma}+\epsilon_{\eta\eta}$ and $\eta_{ij}$ ($i,j=\sigma,s$) are 
+slow-roll parameters defined in a similar way that Eq. \eqref{slowroll2f}, but now in terms of the new fields $\sigma$ and $s$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Final power spectrum and spectral index}
-The curvature and isocurvature perturbations are defined as
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The curvature and isocurvature perturbations are now defined as
 \begin{equation}\label{RS}
 R\equiv\frac{H}{\dot\sigma}\delta \sigma, \ \ \ S=\frac{H}{\dot \sigma}\delta s.
 \end{equation}
-In the slow-roll limit in large scales, the evolution of curvature and isocurvature perturbations can be written using the formalism of tranfer matrix as
+In the slow-roll limit, on large scales, the evolution of curvature and isocurvature 
+perturbations can be written using the formalism of tranfer matrix as
 \begin{equation}
 \binom{R }{S}=\begin{pmatrix}1 & T_{RS}\\ 0& T_{SS}\end{pmatrix}\binom{R}{S}_*,
 \end{equation}
@@ -1257,24 +1295,26 @@ where
 T_{SS}(t^*,t)=\exp\left(\int^t_{t^*}\beta Hdt'\right), \ \ \
 \end{equation}
 \begin{equation}\label{TRS}
-T_{RS}(t^*,t)=\exp\left(\int^t_{t^*}\alpha T_{SS}Hdt'\right)
+T_{RS}(t^*,t)=\exp\left(\int^t_{t^*}\alpha T_{SS}Hdt'\right),
 \end{equation}
 \end{subequations}
 and at linear order in slow-roll parameters
 \begin{equation}
-\alpha\simeq -2\eta_{\sigma s}, \ \ \ \ \beta\simeq-2\epsilon+\eta_{\sigma\sigma}-\eta_{ss}
+\alpha\simeq -2\eta_{\sigma s}, \ \ \ \ \beta\simeq-2\epsilon+\eta_{\sigma\sigma}-\eta_{ss},
 \end{equation}
 where again $\eta_{ij}$ is defined in a similar fashion than Eqs. \eqref{slowroll2f} but in terms of the new fields $\sigma$ and $s$.
 
-On the other hand the primordial curvature perturbation, during a radiaton-dominated era (some time after inflation has ended) is given in large scales by
+On the other hand, the primordial curvature perturbation during a radiaton-dominated 
+era (some time after inflation ended) is given on large scales by
 \begin{equation}
-R=\Psi+\frac{H\delta\rho}{\rho}
+R=\Psi+\frac{H\delta\rho}{\rho},
 \end{equation}
-where $\Psi$ is the gravitational potential. The conventional definition of the isocurvature perturbation for an $i$ specie is given relative to the radiation density by
+where $\Psi$ is the gravitational potential. The conventional definition of the isocurvature perturbation 
+for an $i$-specie is given relative to the radiation density by
 \begin{equation}
 S_i=H\left(\frac{\delta\rho_{i}}{\rho_{i}}-\frac{\delta\rho_\gamma}{\rho_\gamma}\right).
 \end{equation}
-Then, the final power spectrum at the beginning of the radiation-domination era is given by
+Then, at the beginning of the radiation-domination era we get the final power spectra 
 \begin{subequations}\label{spectrums}
 \begin{equation}\label{PRf}
 P_R\simeq P|_*(1+\cot^2\Delta),
@@ -1283,36 +1323,38 @@ P_R\simeq P|_*(1+\cot^2\Delta),
 P_S=T^2_{SS}P|_*,
 \end{equation}
 \begin{equation}
-C_{RS}=T_{RS}T_{SS}P_R|_*
+C_{RS}=T_{RS}T_{SS}P_R|_*,
 \end{equation}
 \end{subequations}
-where at linear order in slow-roll parameters
+where at linear order in slow-roll parameters $P|_*$ is 
 \begin{equation}
-P|_*=\frac{1}{2\epsilon}\left(\frac{2H_*}{m_{pl}}\right)^2
+P|_*=\frac{1}{2\epsilon}\left(\frac{2H_*}{m_{pl}}\right)^2,
 \end{equation}
-where $\Delta$ is the observable correlation angle defined at lower order as
+with $\Delta$ is the observable correlation angle defined at lower order as
 \begin{equation}
 \cos\Delta =\frac{T_{RS}}{\sqrt{1+T_{RS}^2}}.
 \end{equation}
-The final scalar tilts, defined as $n_x-1=d\ln P_x/d\ln k$, at linear order in slow-roll parameters are
+The final spectral index for each contribution, defined as $n_x-1=d\ln P_x/d\ln k$, at linear order in slow-roll parameters are
 \begin{subequations}\label{tilts}
 \begin{eqnarray}
-n_R-1&\simeq & -(6-4\cos^2\Delta)\epsilon+2\sin^2\Delta\eta_{\sigma\sigma}\nonumber \\ &&+4\sin\Delta\cos\Delta\eta_{\sigma s}+2\cos^2\Delta\eta_{ss}\\
-n_c-1&\simeq &-2\epsilon+2\tan\Delta\eta_{\sigma s}+2\eta_{ss}\\
-n_S-1&\simeq & -2\epsilon+2\eta_{ss}
+n_R-1&\simeq & -(6-4\cos^2\Delta)\epsilon+2\sin^2\Delta\eta_{\sigma\sigma},\nonumber \\ 
+&&+4\sin\Delta\cos\Delta\eta_{\sigma s}+2\cos^2\Delta\eta_{ss},\\
+n_c-1&\simeq &-2\epsilon+2\tan\Delta\eta_{\sigma s}+2\eta_{ss},\\
+n_S-1&\simeq & -2\epsilon+2\eta_{ss}.
 \end{eqnarray}
 \end{subequations}
 
-In order to understand what is the contribution of each field to the primordial spectrum, it is usually written the primordial adiabatic and entropy perturbations on super-horizon scales as a power law, given by
+In order to understand the contribution of each field to the primordial spectrum, 
+the primordial adiabatic and entropy perturbations on super-horizon scales are commonly parameterised as power laws
 \begin{subequations}\label{PswAs}
 \begin{equation}\label{PrAs}
-P_R=A_r^2\left(\frac{k}{k_0}\right)^{n_{ad1}-1}+A_s^2\left(\frac{k}{k_0}\right)^{n_{ad2}-1}
+P_R=A_r^2\left(\frac{k}{k_0}\right)^{n_{ad1}-1}+A_s^2\left(\frac{k}{k_0}\right)^{n_{ad2}-1},
 \end{equation}
 \begin{equation}\label{PrCrs}
-C_{RS}=A_SB\left(\frac{k}{k_0}\right)^{n_{cor}-1}
+C_{RS}=A_SB\left(\frac{k}{k_0}\right)^{n_{cor}-1},
 \end{equation}
 \begin{equation}\label{PsAs}
-P_s=B^2\left(\frac{k}{k_0}\right)^{n_{iso}-1}
+P_s=B^2\left(\frac{k}{k_0}\right)^{n_{iso}-1},
 \end{equation}
 \end{subequations}
 where at linear order $n_{ad1}=-6\epsilon+2\eta_{\sigma\sigma}$, $n_{ad2}=2n_C-n_S$, $n_{cor}=n_c$, $n_{iso}=n_S$. We have that $A_r^2$, $A_s^2$ and $B$ can be written in terms of the correlation angle as
@@ -1322,31 +1364,40 @@ where at linear order $n_{ad1}=-6\epsilon+2\eta_{\sigma\sigma}$, $n_{ad2}=2n_C-n
 A_r^2=[P_R\sin^2\Delta]_{k_0}, \ \ \ \ A_s^2=[P_R\cos^2\Delta]_{k_0},
 \end{equation}
 \begin{equation}
-B^2=[T_{SS}^2 P_R|_*]_{k_0}
+B^2=[T_{SS}^2 P_R|_*]_{k_0},
 \end{equation}
 \end{subequations}
-$A_r^2$ and $A_s^2$ are the contribution of the adiabatic and entropy fields to the amplitud of the primordial adiabatic spectrum. 
-\subsubsection{Gravitational waves}
+$A_r^2$ and $A_s^2$ are the contributions of the adiabatic and entropy fields to the amplitude of the primordial adiabatic spectrum. 
 
-Given the fact that scalar and tensor perturbations are decoupled at linear order, the gravitational waves at horizon crossing is the same than in the case of a single field and the amplitude of gravitational waves remains frozen-in on large scales after Hubble exit during inflation. In this way the power spectrum and the tilt of the gravitational waves is given by
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Gravitational waves}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Given the fact that scalar and tensor perturbations are decoupled at linear order, 
+ gravitational waves at horizon crossing 
+ %is the same than in the case of a single field and 
+ the amplitude of gravitational waves remained frozen on large scales after Hubble exit during inflation. Therefore 
+ the tensor power spectrum and the spectral index are given by
 \begin{equation}
-P_T=P_{T*}\simeq 8 \left(\frac{H_*}{2\pi M_{pl}}\right)^2(1+2(-1+C)\epsilon)
+P_T=P_{T*}\simeq 8 \left(\frac{H_*}{2\pi m_{pl}}\right)^2(1+2(-1+C)\epsilon),
 \end{equation}
 \begin{equation}\label{tiltsnt}
-n_T\simeq -2\epsilon\left[1+\left(\frac{4}{3}+4C\right)\epsilon+\left(\frac{2}{3}+2C\right)\eta_{\sigma\sigma}\right]
+n_T\simeq -2\epsilon\left[1+\left(\frac{4}{3}+4C\right)\epsilon+\left(\frac{2}{3}+2C\right)\eta_{\sigma\sigma}\right],
 \end{equation}
 
-The tensor-to-scalar ratio at Hubble exit is the same than in the single field. However, at super-horizon scales, the curvature perturbations continue evolving as \eqref{PRf}. In this way the tensor-to-scalar ratio some time after the end of inflation is
+The tensor-to-scalar ratio at Hubble exit is the same than in the single field case. However, at super-horizon scales, 
+the curvature perturbations continue evolving as \eqref{PRf}. In this way the tensor-to-scalar ratio some time after the end of inflation is
 \begin{equation}\label{Tensortoscalar}
-r\simeq 16\epsilon \sin^2\Delta\left[1-\left(\frac{4}{3}+4C\right)\epsilon +\left(\frac{2}{3}+2C\right)\eta_{\sigma\sigma}\right]
+r\simeq 16\epsilon \sin^2\Delta\left[1-\left(\frac{4}{3}+4C\right)\epsilon +\left(\frac{2}{3}+2C\right)\eta_{\sigma\sigma}\right].
 \end{equation}
-Notice the important result showed here. We can see from \eqref{tensortoscalar} that the single SF case works as an upper constraint on $r$.
+%Notice the important result showed here. 
+We can observe, from \eqref{tensortoscalar}, that the single scalar field case works as an upper constraint on $r$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Inflationary models}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-We have seen that an inflationary model could be described by the specification of the 
+We have seen that a single-field inflationary model could be described by the specification of the 
 potential form $V(\phi)$. In this case the comparison of  
 model predictions to CMB observations reduces to the following basic steps:
 \begin{enumerate}
@@ -1551,10 +1602,10 @@ towards a minimum of its potential, however the minimum has a vacuum energy
 $V(\phi_{\rm min}) = \Lambda^4$ different to zero. 
 In such cases, inflation continues forever unless an
 auxiliary field $\psi$ is added to interact with $\phi$ and ends inflation at some point $\phi = \phi_{\rm c}$.  Such models are well described by $V''\left(\phi\right) > 0$ and $0 < \epsilon < \eta$, where $V$ is the effective 1-field potential for the inflaton. 
- \textcolor{red}{For this porpouse it is neccesary that the mass of the auxiliar field $\psi$ been very massive compared to the hubble parameter at that epoch, i.e. it is neccesary that $V^t_{\psi\psi}\gg H$, where $V^t$ is the total potential that describes the full 2-fields system.} 
+ %\textcolor{red}{For this porpouse it is neccesary that the mass of the auxiliar field $\psi$ been very massive compared to the hubble parameter at that epoch, i.e. it is neccesary that $V^t_{\psi\psi}\gg H$, where $V^t$ is the total potential that describes the full 2-fields system.} 
 \\
 
-The generic \textcolor{red}{1-field effective} potential for hybrid inflation, in a similar way to large field and small field models,
+The generic potential for hybrid inflation, in a similar way to large field and small field models,
 are considered as
 \begin{equation}
 V\left(\phi\right) = \Lambda^4 \left[1 + \left(\phi / \mu\right)^p\right].
@@ -1701,7 +1752,13 @@ regions of the $(n_{\rm s}, r)$ plane without overlaping, see Figure \ref{fig:pa
 
 \subsection{Hybrid waterfall inflation}
 
-This scenario is an alternative case of the hybrid models studied in section \ref{hybridmodels}. It is obtained when the mass of the auxiliar field is smaller than the hubble parameter, i. e. when $V_{\psi\psi}\lesssim H$. If this happens, at the momment that the inflaton acquires the critical value $\phi_c$ the auxiliar field starts to evolve no too fast and a period of inflation is produced during its dynamics, obtaining a two field inflationary scenario, usually called as the \textit{waterfall scenario}. An interesting result of this stage is that it is possible to obtain a \textit{red} power spectrum ($n_s<1$) depending on the amount of inflation produced during the waterfall period.   
+A two-field inflationary scenario  is an alternative case of the hybrid models studied in section \ref{hybridmodels}. 
+It occurs when the mass of the auxiliar field is smaller than the hubble parameter, i.e.  $V_{\psi\psi}\lesssim H$. 
+%If this happens, at the momment that 
+Once the inflaton acquires a critical value $\phi_c$, the auxiliary field starts evolving slowly and 
+a period of inflation is produced during its dynamics, %obtaining a two field inflationary scenario, 
+usually called as the \textit{waterfall scenario}. An interesting result is the possibility 
+to obtain a \textit{red} power spectrum ($n_s<1$) depending on the amount of inflation produced during the waterfall period.   
 %There are some studies in which more than one scalar field is responsible for generating 
 %inflation in the early universe. However, because we are interested just in the last 
 %50-60 e-folds, it is expected that no more than two scalar fields can be responsible 
@@ -1717,15 +1774,23 @@ V^t=\frac{\lambda}{4}\left[\left(\frac{M^2}{\lambda}-\psi^2\right)^2+\frac{1}{2}
 \end{equation}
 %
 with $M, m, \lambda$ constant values.
-In the typical hybrid models, it is expected that the \textit{waterfall} field $\psi$ remains in $\psi=0$ 
+In the typical hybrid models, it is expected that the \textit{waterfall} field $\psi$ remains a $\psi=0$ 
 whilst the inflaton field $\phi$ evolves generating inflation. 
 Then, when $\phi=\phi_c$ the minimum $\psi=0$ becomes unstable and the waterfall 
 field rolls down to its true minimum, finishing up immediately with the inflationary era. 
-However, if $M^2\lesssim H^2$ we obtain the waterfall period. Considering the limmit $g^2\psi^2/H^2\ll m^2/H^2$ (i.e. the back-reaction of the waterfall field on the inflaton is small during inflation) and $\psi^2/H^2\ll M^2/\lambda H^2$ we obtain finally that \textcolor{red}{referencia[http://iopscience.iop.org/article/10.1088/0264-9381/28/7/075009/pdf]}
+However, if $M^2\lesssim H^2$ we obtain the waterfall period. Considering the 
+limit $g^2\psi^2/H^2\ll m^2/H^2$ (i.e. the back-reaction of the waterfall field on the inflaton 
+is small during inflation) and $\psi^2/H^2\ll M^2/\lambda H^2$ we obtain finally that 
+\textcolor{red}{[http://iopscience.iop.org/article/10.1088/0264-9381/28/7/075009/pdf]}
 \begin{equation}
 n_s-1\simeq \frac{4M^2}{3H_0^2}\left(\frac{M^2}{9H_0^2}-rn_m\right)
 \end{equation}
-where $H_0$ is the value of the Hubble parameter at the moment of inflation and $n_m=N_m-N_c$ is a positive or negative number that meassures the differences between the number of e-folds $N_m$ remaining when a given scale $k$ left the horizon and the number of e-folds $N_c$ remaining when the waterfall transition starts. Then, for modes that leave the horizon before the phase transition $n_m<0$ and $n_s$ is blue, while for modes that leaves the horizon after phase transition $n_m>0$ and $n_s$ can be red or blue.  \textcolor{red}{No s\'e si esto lo escrib\'i bien, ¿podr\'ias revisarlo?}
+where $H_0$ is the value of the Hubble parameter at the moment of inflation and $n_m=N_m-N_c$ is a 
+ measurement of the differences between the $e$-folds $N_m$  
+ when a given scale $k$ left the horizon and the $e$-folds $N_c$ when the waterfall transition starts. 
+ Then, for modes that left the horizon before the phase transition we have $n_m<0$ and $n_s >1$, 
+ whereas for modes that left the horizon after a phase transition we have that $n_m>0$ and $n_s$ can take any value. 
+ % \textcolor{red}{No s\'e si esto lo escrib\'i bien, ¿podr\'ias revisarlo?}
 
    
 
@@ -2077,7 +2142,7 @@ narrow the number of candidates which might better explain the inflationary peri
 
 \section{Acknowledgments }
 
-LEP were supported by CONACyT M\'exico.
+LEP was supported by CONACyT M\'exico.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
