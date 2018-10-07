@@ -1191,11 +1191,10 @@ as the presence of multiple fields could drive this process too.
 In this section we show how the cosmological equations are modified when two scalar fields are responsible for driving inflation. 
 %analyze how all what we have already seen is modified when several scalar fields are considered for the inflationary mechanism. 
 %For simplicity we follow
- \textcolor{red}{[Christian T. Byrnes, David Wands;  Phys.Rev. D74 (2006) 043529; 
- DOI:  	10.1103/PhysRevD.74.043529;  arXiv:astro-ph/0605679v3]} 
+ \citep{Byrnes} 
  %the modifications obtained when two scalar fields are responsible of driving inflation. 
  The generalization to more than two fields can be easily obtained and described by
-  \textcolor{red}{[https://arxiv.org/pdf/1606.06971.pdf]}. 
+  \citep{Gong}. 
 
 \subsection{Background equation of motion}
 
@@ -1215,21 +1214,17 @@ H^2=\frac{8\pi}{3m_{Pl}^2}\left[V+\frac{1}{2}\left(\dot\phi^2+\dot\psi^2\right)\
 \end{subequations}
 where $V_i\equiv\partial V/\partial \phi_i$. During inflation we adopt the slow-roll approximation for each field. 
 This occurs always that the condition $\epsilon_i,|\eta_{ij}|\ll 1$ is fulfilled; $\epsilon_i$ and $\eta_{ij}$ are now 
-a new set of slow-roll parameters, defined as \jav{cambie la G por masas de planck, pero revisar que el texto
-de abajo sea consistente}
-
+a new set of slow-roll parameters defined by
 \begin{equation}\label{slowroll2f}
 \epsilon_i = \frac{m_{Pl}^2}{16 \pi }\left(\frac{V_i}{V}\right)^2, \ \ \ \ \ \ \ \ 
-\eta_{ij}=\frac{m_{Pl}^2}{8\pi G}\left(\frac{V_{ij}}{V}\right).
+\eta_{ij}=\frac{m_{Pl}^2}{8\pi}\left(\frac{V_{ij}}{V}\right).
 \end{equation}
-Then the above equations are written as
-
+The above equations are re-written in the slow-roll approximation as
 \begin{equation}
 \dot{\phi}_i\simeq -\frac{V_i}{3H}\left(1+\frac{1}{3}\delta_i^H\right), \ \ \ \ \ \ \ \ \
 H^2\simeq \frac{8\pi }{3m_{Pl}^2}V\left(1+\frac{1}{3}\epsilon^H\right)
 \end{equation}
 with $\delta_i^H$ and $\epsilon^H$ the new slow-roll parameters:
-
 \begin{equation}
 \delta_i^H = -\frac{\ddot\phi_i}{H\dot\phi_i}, \ \ \ \ \ \ \ \ \epsilon^H = \epsilon_{\phi\phi}+\epsilon_{\psi\psi}.
 \end{equation} 
@@ -1245,22 +1240,21 @@ The equation of motion for the perturbed fields, in the spatially flat gauge, is
 \end{equation}
 
 \noindent
-On the largest scales ($k\ll aH$) it is better to work on a rotating basis of the fields given by
+On the largest scales ($k\ll aH$) it is better to work on a rotating basis of the fields defined by the relation:
   \begin{subequations}
   \begin{equation}
   \binom{\delta \sigma}{\delta s}=S^{\dagger}\binom{\delta \phi}{\delta\psi},
   \end{equation}
-  
-  with
+  where
   \begin{equation}\label{angle}
   S=\begin{pmatrix}\cos\theta & -\sin\theta\\ \sin\theta & \cos\theta\end{pmatrix}, \ \ \ \tan\theta =\frac{\dot \psi}{\dot \phi}\simeq\pm \sqrt{\frac{\epsilon_\psi}{\epsilon_\phi}}.
   \end{equation} 
   \end{subequations}
   
-The field $\sigma$ is parallel to the trajectory of the field space and usually called 
-\textit{adiabatic field}, whereas the field  $s$ is perpendicular and named it the \textit{entropy field}. 
+The field $\sigma$ is parallel to the trajectory on the field space and it is usually called 
+\textit{adiabatic field}, whereas the field  $s$ is perpendicular and named the \textit{entropy field}. 
 If the background trajectory is curved then $\delta\sigma$ and $\delta s$ are correlated at Hubble exit,
-and therefore at this point  the power spectrum and cross-correlation are given by
+and therefore at this point  the power spectrum and cross-correlation are described by the expressions:
 
 \begin{subequations}
 \begin{equation}
@@ -1273,31 +1267,27 @@ C_{\sigma s^*}(k)\simeq-2C\eta_{\sigma s}\left(\frac{H_*}{2\pi}\right)^2,
 P_{s^*}(k)\simeq\left(\frac{H_*}{2\pi}\right)^2(1+(-2+2C)\epsilon-2C\eta_{ss}),
 \end{equation}
 \end{subequations}
-where $C\simeq 0.7296$ and $\epsilon\equiv \epsilon_{\sigma\sigma}+\epsilon_{\eta\eta}$ and $\eta_{ij}$ ($i,j=\sigma,s$) are 
+where $C\simeq 0.7296$, $\epsilon\equiv \epsilon_{\sigma\sigma}+\epsilon_{ss}$ and $\eta_{ij}$ ($i,j=\sigma,s$) are 
 slow-roll parameters defined in a similar way that Eq. \eqref{slowroll2f}, but now in terms of the new fields $\sigma$ and $s$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Final power spectrum and spectral index}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The curvature and isocurvature perturbations are now defined as
+The curvature and isocurvature perturbations are usually defined as
 \begin{equation}\label{RS}
 R\equiv\frac{H}{\dot\sigma}\delta \sigma, \ \ \ S=\frac{H}{\dot \sigma}\delta s.
 \end{equation}
 In the slow-roll limit, on large scales, the evolution of curvature and isocurvature 
-perturbations can be written using the formalism of tranfer matrix as
+perturbations can be written using the formalism of tranfer matrix:
 \begin{equation}
 \binom{R }{S}=\begin{pmatrix}1 & T_{RS}\\ 0& T_{SS}\end{pmatrix}\binom{R}{S}_*,
 \end{equation}
 where
-\begin{subequations}
 \begin{equation}
-T_{SS}(t^*,t)=\exp\left(\int^t_{t^*}\beta Hdt'\right), \ \ \
-\end{equation}
-\begin{equation}\label{TRS}
+T_{SS}(t^*,t)=\exp\left(\int^t_{t^*}\beta Hdt'\right), \ \ \ \ \ \ 
 T_{RS}(t^*,t)=\exp\left(\int^t_{t^*}\alpha T_{SS}Hdt'\right),
 \end{equation}
-\end{subequations}
 and at linear order in slow-roll parameters
 \begin{equation}
 \alpha\simeq -2\eta_{\sigma s}, \ \ \ \ \beta\simeq-2\epsilon+\eta_{\sigma\sigma}-\eta_{ss},
@@ -1330,34 +1320,35 @@ where at linear order in slow-roll parameters $P|_*$ is
 \begin{equation}
 P|_*=\frac{1}{2\epsilon}\left(\frac{2H_*}{m_{pl}}\right)^2,
 \end{equation}
-with $\Delta$ is the observable correlation angle defined at lower order as
+with $\Delta$ the observable correlation angle defined at lower order as
 \begin{equation}
 \cos\Delta =\frac{T_{RS}}{\sqrt{1+T_{RS}^2}}.
 \end{equation}
+
 The final spectral index for each contribution, defined as $n_x-1=d\ln P_x/d\ln k$, at linear order in slow-roll parameters are
 \begin{subequations}\label{tilts}
 \begin{eqnarray}
-n_R-1&\simeq & -(6-4\cos^2\Delta)\epsilon+2\sin^2\Delta\eta_{\sigma\sigma},\nonumber \\ 
+n_s-1&\simeq & -(6-4\cos^2\Delta)\epsilon+2\sin^2\Delta\eta_{\sigma\sigma},\nonumber \\ 
 &&+4\sin\Delta\cos\Delta\eta_{\sigma s}+2\cos^2\Delta\eta_{ss},\\
-n_c-1&\simeq &-2\epsilon+2\tan\Delta\eta_{\sigma s}+2\eta_{ss},\\
+n_C-1&\simeq &-2\epsilon+2\tan\Delta\eta_{\sigma s}+2\eta_{ss},\\
 n_S-1&\simeq & -2\epsilon+2\eta_{ss}.
 \end{eqnarray}
 \end{subequations}
-
-In order to understand the contribution of each field to the primordial spectrum, 
-the primordial adiabatic and entropy perturbations on super-horizon scales are commonly parameterised as power laws
+Notice that we have left the subindex $s$ in order to be consistent with the scalar spectral index defined in the single inflationary scenario.
+ 
+Sometines it is also commun to  parameterised the primordial adiabatic and entropy perturbations on super-horizon scales as power laws
 \begin{subequations}\label{PswAs}
 \begin{equation}\label{PrAs}
 P_R=A_r^2\left(\frac{k}{k_0}\right)^{n_{ad1}-1}+A_s^2\left(\frac{k}{k_0}\right)^{n_{ad2}-1},
 \end{equation}
 \begin{equation}\label{PrCrs}
-C_{RS}=A_SB\left(\frac{k}{k_0}\right)^{n_{cor}-1},
+C_{RS}=A_sB\left(\frac{k}{k_0}\right)^{n_{cor}-1},
 \end{equation}
 \begin{equation}\label{PsAs}
 P_s=B^2\left(\frac{k}{k_0}\right)^{n_{iso}-1},
 \end{equation}
 \end{subequations}
-where at linear order $n_{ad1}=-6\epsilon+2\eta_{\sigma\sigma}$, $n_{ad2}=2n_C-n_S$, $n_{cor}=n_c$, $n_{iso}=n_S$. We have that $A_r^2$, $A_s^2$ and $B$ can be written in terms of the correlation angle as
+where at linear order $n_{ad1}=-6\epsilon+2\eta_{\sigma\sigma}$, $n_{ad2}=2n_C-n_S$, $n_{cor}=n_C$, $n_{iso}=n_S$. We have that $A_r^2$, $A_s^2$ and $B$ can be written in terms of the correlation angle as
 \begin{subequations}
 \label{RelAs}
 \begin{equation}
@@ -1374,10 +1365,10 @@ $A_r^2$ and $A_s^2$ are the contributions of the adiabatic and entropy fields to
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Given the fact that scalar and tensor perturbations are decoupled at linear order, 
- gravitational waves at horizon crossing 
+ gravitational waves at horizon crossing is the same than in the single-field case and 
  %is the same than in the case of a single field and 
  the amplitude of gravitational waves remained frozen on large scales after Hubble exit during inflation. Therefore 
- the tensor power spectrum and the spectral index are given by
+ the tensor power spectrum and the spectral index are finally
 \begin{equation}
 P_T=P_{T*}\simeq 8 \left(\frac{H_*}{2\pi m_{pl}}\right)^2(1+2(-1+C)\epsilon),
 \end{equation}
@@ -1386,12 +1377,12 @@ n_T\simeq -2\epsilon\left[1+\left(\frac{4}{3}+4C\right)\epsilon+\left(\frac{2}{3
 \end{equation}
 
 The tensor-to-scalar ratio at Hubble exit is the same than in the single field case. However, at super-horizon scales, 
-the curvature perturbations continue evolving as \eqref{PRf}. In this way the tensor-to-scalar ratio some time after the end of inflation is
+the curvature perturbations continue evolving as \eqref{PRf}. In this way the value of $r$ some time after the end of inflation is
 \begin{equation}\label{Tensortoscalar}
 r\simeq 16\epsilon \sin^2\Delta\left[1-\left(\frac{4}{3}+4C\right)\epsilon +\left(\frac{2}{3}+2C\right)\eta_{\sigma\sigma}\right].
 \end{equation}
 %Notice the important result showed here. 
-We can observe, from \eqref{tensortoscalar}, that the single scalar field case works as an upper constraint on $r$.
+We can observe from \eqref{tensortoscalar} that the single scalar field case works as an upper constraint on $r$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Inflationary models}
@@ -1781,7 +1772,7 @@ field rolls down to its true minimum, finishing up immediately with the inflatio
 However, if $M^2\lesssim H^2$ we obtain the waterfall period. Considering the 
 limit $g^2\psi^2/H^2\ll m^2/H^2$ (i.e. the back-reaction of the waterfall field on the inflaton 
 is small during inflation) and $\psi^2/H^2\ll M^2/\lambda H^2$ we obtain finally that 
-\textcolor{red}{[http://iopscience.iop.org/article/10.1088/0264-9381/28/7/075009/pdf]}
+\citep{Abol}
 \begin{equation}
 n_s-1\simeq \frac{4M^2}{3H_0^2}\left(\frac{M^2}{9H_0^2}-rn_m\right)
 \end{equation}
@@ -2151,6 +2142,10 @@ LEP was supported by CONACyT M\'exico.
 
 \begin{thebibliography}
 
+\bibitem[Abolhasani, Firouzjahi and Namjoo(2010)]{Abol}A. A. Abolhasani, H. Firouzjahi,  and M. H. Namjoo,
+(2010),
+arXiv:1010.6292 [astro-ph.CO]
+.
 
 \bibitem[Planck Colaboration(2015)]{PlanckC}Ade P. A. R.   et  al.  Planck  collaboration.  Astron.  Astrophys. 594, A20 (2016). arXiv:1502.02114
 
@@ -2171,6 +2166,9 @@ LEP was supported by CONACyT M\'exico.
 
 \bibitem[McCoy(2014)]{McCoy}C. D. McCoy, What Is the Horizon Problem?, november 2014
 \bibitem[Carroll(2001)]{Carrol01}Carroll, S. 2001, Living Rev. Relativity, 3
+   
+\bibitem[Byrnes and Wands(2006)]{Byrnes} Christian T. Byrnes, David Wands;  Phys.Rev. D74 (2006) 043529; 
+ DOI:  	10.1103/PhysRevD.74.043529;  arXiv:astro-ph/0605679v3   
    
 \bibitem[Coles \& Lucchin(1995)]{Coles}Coles, P., and Lucchin, F. 1995, Cosmology, WILEY, England, UK 
 
@@ -2195,9 +2193,13 @@ LEP was supported by CONACyT M\'exico.
  
 \bibitem[Hinshaw et al.(2009)]{wmap5}Hinshaw, G., et~al. 2009, ApJS, 180, 225
 %astro-ph/08030732 
-\bibitem[R. Hlozek et al.(2012)]{Hlozek}R. Hlozek., et~al. Astrophys. J. 749 (2012) 90
-
 \bibitem[Hu \& Dodelson(2002)]{Hu}Hu, W., and {Dodelson,} S. 2002, Annu. Rev. Astron. and Astrophys., 40, 171
+
+\bibitem[Gong(2016)]{Gong}J.-O. Gong,
+Multi-field inflation and cosmological perturbations,
+Int. J. Mod. Phys.
+D26
+(2016) 1740003, arXiv: 1606.06971 [gr-qc]
 
   \bibitem[Keisler et al.(2011)]{SPT}Keisler, R., et al. 2011, astro-ph/1105.3182  
  
@@ -2285,7 +2287,7 @@ Switzerland
 
 \bibitem[Planck(2015-XVI)]{Planckxvi}Planck 2015 results. XVI. Isotropy and statistics of the CMB, arXiv:1506.07135v2 [astro-ph.CO]
  
-\bibitem[Planck(2016)]{Planck}The Planck Collaboration, 2016, astro-ph/0604069. 
+\bibitem[R. Hlozek et al.(2012)]{Hlozek}R. Hlozek., et~al. Astrophys. J. 749 (2012) 90
  
 \bibitem[Riess(2009)]{Riess} Riess, A.~G., et~al. 2009, ApJ., 699, 539 
 % astro-ph/0210007 
@@ -2301,6 +2303,8 @@ Switzerland
 \bibitem[Tegmark  et al.(2001)]{Teg}Tegmark, M., et~al. 2001, Phys. Rev. D, 63, 043007   
 
 \bibitem[Ligo colaboration(2017)]{ligo}The LIGO Scientific Collaboration and The Virgo Collaboration, \textit{A gravitational-wave standard siren measurement of the Hubble constant}
+
+\bibitem[Planck(2016)]{Planck}The Planck Collaboration, 2016, astro-ph/0604069. 
  
  \bibitem[Vilenkin \& Shellard(2000)]{Vilenkin}Vilenkin, A., Shellard, E. P. S. 2000, Cosmic Strings and Other Topological Defects,
 Cambridge University Press,  Cambridge, UK 
